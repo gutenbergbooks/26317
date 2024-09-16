@@ -1,0 +1,2657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Buchanan’s Journal of Man, May 1887.</title>
+	<style type="text/css" media="screen">
+
+		/*Overall document styles*/
+		* {font-family:Georgia,serif;}
+		body {
+			margin-left: 15%;
+			margin-right: 15%;
+		}
+		p {
+			text-align: justify;
+			line-height: 1.3;
+			margin: 0;
+			text-indent: 1em;
+		}
+		h1,h2,h3, h4 {
+			text-align: center;
+			font-weight: normal;
+			clear: both;
+			text-indent:0em;
+			font-variant: small-caps;
+		}
+		hr.short {width:20%;text-align:center;}
+		ul { list-style: none; }
+		li {
+			text-indent: -1em;
+			padding-left: 1em;
+		}
+		abbr, img {
+			text-decoration: none;
+			border: none;
+		}
+
+		/*Page number styling*/
+		.pagenum, .skip_link, .note {
+			position: absolute;
+			left: 2%;
+			font-size: 10px;
+			font-weight:normal;
+			font-variant:normal;
+			font-style: normal;
+			letter-spacing: normal;
+			text-indent: 0em;
+			text-align: right;
+			color: gray;
+			background-color: inherit;
+		}
+		.pagenum:after { content: attr(title); }
+
+		/*Frontmatter styles*/
+		.skip_link {right:2%;}
+		#frontmatter .first_paragraph:first-letter {
+			font: inherit;
+			float: inherit;
+			margin: inherit;
+			line-height: inherit;
+		}
+		#blurbs {margin:4em 0em;}
+		.blurb { padding-bottom: 1em; }
+
+		#contents {margin:6em 2em;}
+
+		#masthead, #frontmatter { border-top: 2px gray solid; }
+		#mastdate {
+			width: 100%;
+			height: 1.25em;
+			letter-spacing: 0.1em;
+			font-variant: small-caps;
+			border-top: thin gray solid;
+			border-bottom: thin gray solid;
+			padding: 1em 0em;
+			margin: 2em 0em;
+			text-align: center;
+			text-indent: 0em;
+		}
+		#mastdate p { margin: 0; }
+		#leftmast,#rightmast,#centermast {
+			float: left;
+			width: 33%;
+			text-align: center;
+		}
+		#centermast { width: 34%; }
+		.issue_title {
+			letter-spacing: .1em;
+			margin: 2em 0em;
+			line-height: 2em;
+			font-size: 250%;
+		}
+		.proprietor { font-size: 80%; }
+
+		/*Article styles*/
+		.title { font-variant: normal; }
+		.article .title {
+			margin: 2em;
+			font-family: 'Lucida Blackletter',sans-serif;
+		}
+		.subtitle, .author {
+			font-size: .9em;
+			font-family: Georgia,serif;
+			padding: 2em 0em;
+			text-indent: 0em;
+			text-align: center;
+		}
+		.supertitle {font-size:.8em;text-align:center;text-indent:0em;}
+		.article { margin: 4em 0em; }
+		.aside,.miscellany_item, .subsection { margin: 2em 0em; }
+		.separator {
+			text-indent: 0em;
+			text-align: center;
+			margin: 1em;
+		}
+		.image {
+			clear: both;
+			padding: 2em 0em;
+			margin:auto;
+			text-align:center;
+		}
+		.illo_left {
+			float:left;
+			clear:none;
+			padding:0em 5px .25em 0em;
+		}
+		.illo_right {
+			float:right;
+			clear:none;
+			padding:0em 0em .25em 5px;
+		}
+		.chapter_outline, .purpose {
+			width:80%;
+			margin:2em 10%;
+			font-size:.9em;
+			text-indent:0em;
+		}
+		.dateline {text-align:right;margin:1em 2em 0em;}
+		.source {text-align:right;margin:0em 2em 1em;}
+
+		#agelist {margin:2em 0em 0em 2em;}
+		#agelist p {font-style:italic;}
+
+		.continued_paragraph {text-indent:0em;}
+
+		/*Character and emphasis styles*/
+		.first_paragraph { text-indent: 0em; }
+		.first_paragraph .first_word { text-transform: uppercase; }
+		.first_word { font-variant: small-caps; }
+		.first_paragraph:first-letter {
+			font-size: 200%;
+			float: left;
+			margin: 0em .25em 0em 0em;
+			line-height: 1em;
+		}
+		.name,.headline,.emphasis {
+			font-style: normal;
+			font-variant: small-caps;
+			font-weight: normal;
+		}
+
+		.extra_emphasis, .small_all_caps {
+			font-style: normal;
+			font-weight: normal;
+			font-size: .85em;
+		}
+
+		/*Poetry styles*/
+		.poem {
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-bottom: 1em;
+			margin-top:1em;
+			text-align: left;
+		}
+		.poem .stanza { margin: 1em 0em; }
+		.poem p {
+			margin: 0;
+			padding-left: 3em;
+			text-indent: -3em;
+			text-align: left;
+			line-height: normal;
+		}
+
+		/*Footnotes-as-sidenotes*/
+		.note { /*Style for the footnote -- turns it into a sidenote*/
+			text-indent:-.5em;
+			padding-left:1em;
+			text-align:left;
+			left:87%;
+			color:black;
+			font-family:body;
+		}
+
+		/*Advertising section styles*/
+		#business {
+			margin: 4em auto;
+			font-size: .9em;
+		}
+		.ad_narrow {
+			width: 60%;
+			margin: 1em auto;
+			border-bottom: thin gray solid;
+			padding-bottom: 1em;
+		}
+		.ad_wide {width:80%;
+			margin: 1em auto;
+			border-bottom: thin gray solid;
+			padding-bottom: 1em;
+		}
+		.ad_pstyle_1 {
+			padding: 1em 0em;
+			text-align: center;
+			text-indent: 0em;
+			line-height: normal;
+			font-family: Helvetica,sans-serif;
+			font-weight: bold;
+			font-size: 1.75em;
+		}
+		.ad_pstyle_2 {
+			padding: 1em 0em;
+			text-align: center;
+			text-indent: 0em;
+			line-height: normal;
+			font-family: Helvetica,sans-serif;
+			font-weight: bold;
+			font-size: 1.25em;
+		}
+		.ad_pstyle_3 {
+			padding: 1em 0em;
+			text-align: center;
+			text-indent: 0em;
+			line-height: normal;
+			font-size: 1em;
+			font-weight: bold;
+		}
+		.ad_pstyle_4 {
+			text-align: right;
+			margin-right: 1em;
+		}
+		.ad_pstyle_5 { text-indent: 0em; }
+		/*There is no 6 right now*/
+		.ad_pstyle_7 {
+			padding: 1em 0em;
+			text-align: center;
+			text-indent: 0em;
+			font-style: italic;
+		}
+		.ad_pstyle_8 {
+			padding: 0.5em 0em;
+			text-align: center;
+			text-indent: 0em;
+		}
+		.ad_pstyle_9 {
+			text-align: center;
+			text-indent: 0em;
+			font-variant: small-caps;
+		}
+		.ad_pstyle_10 {
+			padding: 1em 0em;
+			text-align: center;
+			text-indent: 0em;
+			line-height: normal;
+			font-family: Helvetica,sans-serif;
+			font-size: 1em;
+			width:80%;
+			margin:auto;
+			line-height:3em;
+			border-bottom:thin gray dotted;
+		}
+		.ad_pstyle_11 {
+			padding: 1em 0em;
+			border-top: 1px gray solid;
+		}
+		.sign {
+			text-align: center;
+			text-indent: 0em;
+			padding-bottom: 1em;
+		}
+		.address {
+			text-align: right;
+			display: block;
+		}
+		.letter { margin: 1em 0em; }
+		.closing,.business_address,.segment { padding-right: 3em; }
+		.location,.salutation { font-variant: small-caps; }
+		.addressee { text-indent: 0em; }
+		.ad_table {
+			width: 100%;
+			margin: auto;
+		}
+		.ad_table td+td { text-align: right; }
+
+		.preamble p {text-align:center;text-indent:0em;margin:1em 0em;}
+		.ad_wide p {margin:1em 0em;}
+
+		#transcriber_note {font-size:.9em;width:80%;margin:2em 10%;border:thin dotted gray;padding:1em;background-color:#eee;color:inherit;}
+		#transcriber_note p {text-indent:0em;text-align:left;}
+
+		#the_end {margin-top:5em;border-bottom:2px gray solid;}
+		/*Anchor styles*/
+		a:link, a:visited { text-decoration:none; }
+
+	</style>
+</head>
+
+<body>
+
+	<div id="masthead">
+		<h1 class="issue_title"><a class="pagenum" id="page1" title="1"></a><span class="proprietor">BUCHANAN’S</span><br />
+		JOURNAL OF MAN.</h1>
+		<div id="mastdate">
+			<p id="leftmast"><abbr title="Volume">Vol.</abbr> <abbr title="One">I.</abbr></p>
+			<p id="centermast">MAY, 1887.</p>
+			<p id="rightmast"><abbr title="number">No.</abbr> 4.</p>
+		</div>
+	</div><!--Masthead-->
+
+<div id="contents">
+	<ul>
+		<li><a href="#art1">The Prophetic Faculty: War and Peace</a></li>
+		<li><a href="#art2">Clearing away the Fog</a></li>
+		<li><a href="#art3">The Danger of living among Christians: A Question of peace or war</a></li>
+		<li><a href="#art4">Legislative Quackery, Ignorance, and Blindness to the Future</a></li>
+		<li><a href="#art5">Evils that need Attention</a></li>
+		<li><a href="#art6">What is Intellectual Greatness</a></li>
+		<li><a href="#art7">Spiritual Wonders</a>—<a href="#wonder1">Slater’s Tests</a>; <a href="#wonder2">Spirit Pictures</a>; <a href="#wonder3">Telegraphy</a>; <a href="#wonder4">Music</a>; <a href="#wonder5">Slate Writing</a>; <a href="#wonder6">Fire Test</a></li>
+		<li><a href="#art8">MISCELLANEOUS INTELLIGENCE</a>—<a href="#misc1">Erratum</a>;
+			<a href="#misc2">Co-operation</a>;
+			<a href="#misc3">Emancipation</a>;
+			<a href="#misc4">Inventors</a>;
+			<a href="#misc5">Important Discovery</a>;
+			<a href="#misc6">Saccharine</a>;
+			<a href="#misc7">Sugar</a>;
+			<a href="#misc8">Artificial Ivory</a>;
+			<a href="#misc9">Paper Pianos</a>;
+			<a href="#misc10">Social Degeneracy</a>;
+			<a href="#misc11">Prevention of Cruelty</a>;
+			<a href="#misc12">Value of Birds</a>;
+			<a href="#misc13">House Plants</a>;
+			<a href="#misc14">Largest Tunnel</a>;
+			<a href="#misc15">Westward Empire</a>
+		</li>
+		<li><a href="#art9">Structure of the Brain</a></li>
+		<li><a href="#art9_part2">Chapter III. Genesis of the Brain</a></li>
+		<li><a href="#business">To the Readers of the Journal</a>—<a href="#college">College of Therapeutics</a></li>
+		<li><a href="#press">Journal of Man</a>—<a href="#lang_of_press">Language of Press and Readers</a></li>
+	</ul>
+</div>
+
+<hr class="short" />
+
+<div id="art1" class="article">
+	<h2 class="title">The Prophetic Faculty: War and Peace.</h2>
+	<p><span class="first_word">In</span> our last issue, the psychometric faculty of prophecy was illustrated
+	by predictions of peace, while generals, statesmen, and editors
+	were promising a gigantic war. In this number the reader will find
+	a grand prediction of war, while statesmen and states were anticipating
+	peace, and a southern statesman, even upon the brink of
+	war, offered to drink all the blood that would be shed.</p>
+
+	<p>The strength of the warlike spirit and prediction at the time
+	psychometry was prophesying peace was conspicuous even as late as
+	the ninth of March, when the London correspondent of the <cite>Sun</cite>
+	wrote as follows:</p>
+
+	<p>“An eminent Russian general with whom I have talked believes
+	the plan of Russian attack on Austria is fully developed. Galicia
+	is to be the battleground between the two countries. Russia will
+	enter the province without trouble, as there is nothing to hinder her.
+	Then she will make a dash to secure the important strategic railroad
+	which runs parallel with the Galician frontier, and seek to drive the
+	Austrians over the Carpathians.</p>
+
+	<p>“That Galicia will witness the first fighting is generally admitted,
+	as also that the possession of the strategic railroad, running as
+	it does just at the rear of the Austrian positions, would be the most
+	vital question. It may be interesting to say that military men of
+	whatever nationality look upon an early war as a certain thing.
+	They are not content to say they believe war is coming; they are
+	absolutely positive of it, and each little officer has his own personal
+	way of conclusively proving that this sort of peace cannot go on any
+	longer.</p>
+
+	<p>“Meanwhile there are lots of straws floating about this week, which
+	indicate that international winds are still blowing toward war.
+	From Russian Poland there is reported an interruption in all kinds
+	of business, owing to the war scare. Manufacturers refuse to accept
+	orders from private persons, and financial institutions have still
+	further weakened business by reducing their credit to a minimum.
+	A letter from St. Petersburg tells of the tremendous enthusiasm of
+	the troops at the review by the Czar on last Saturday, of the wild
+	cheering for his imperial Majesty, of the loud and strident whistles
+	audible above the roar of the cannon with which the officers command
+	their men, and of the general blending of barbaric fierceness
+	and courage with modern discipline and fighting improvements.</p>
+
+	<p><a class="pagenum" id="page2" title="2"> </a>“In Vienna the troops are hard at work practising with the Numannlicher
+	repeating rifle, with which all have been provided. The
+	Sunday observance act, usually rigorously enforced, has been suspended,
+	that the government orders for military supplies may be
+	completed two weeks earlier than contracted for.</p>
+
+	<p>“The business of the Hotchkiss gun-making concern is shown to
+	have increased one hundred per cent with the war scare, and the
+	eagerness to secure the stock, which now stands at thirty per cent
+	premium, shows a conviction among monied men. The capital has
+	been subscribed fifteen times over.”</p>
+
+	<p>The persistent prediction of peace was speedily fulfilled. March
+	12 my statement was sent to the press, and March 22 Bismarck said
+	to Prince Rudolph of Austria that “<em>peace is assured to Europe for
+	1887</em>,” and newspaper correspondents announce that the war alarm is
+	over. Mr. Frederick Harrison, who is travelling on foot in France,
+	writes that he has found no one who desires war, and that the people
+	are not even thinking of it.</p>
+
+	<p>What is the popular judgment, or even the judgment of popular
+	leaders worth upon any great question? The masses of mankind
+	have their judgments enmeshed and inwoven in a web of mechanical
+	habituality, compelling them to believe that what is and has
+	been must continue to be in the future, thus limiting their conceptions
+	to the commonplace. Their leaders do not rise to nobler
+	conceptions, for if they did not sympathize with the popular,
+	commonplace conceptions and prejudices they would not be leaders.</p>
+
+	<p>“We deem it safe to assert,” says Mrs. Emma Hardinge Britten
+	in her most valuable and interesting “History of Modern Spiritualism,”
+	“from opinions formed upon an extensive and intimate knowledge
+	of both North and South, and a general understanding of the
+	politics and parties in both sections, that any settlement of the
+	questions between them by the sword was never deliberately contemplated,
+	and that the outbreak, no less than the magnitude and
+	length of the mighty struggle, was all, humanly speaking, forced on
+	by the logic of events, rather than through the preconcerted action
+	of either section of the country. We say this much to demonstrate
+	the truly prophetic character of many of the visions and
+	communications which circulated amongst the Spiritualists prior to
+	the opening of the war.”</p>
+
+	<p>Not only was it prophesied by the Quaker Joseph Hoag thirty
+	years in advance, but more fully prophesied from the spirit world by
+	the spirit of Gen. Washington, and again most eloquently predicted
+	through the lips of Mrs. E. Hardinge Britten in 1860. Yet who
+	among all the leaders of the people knew anything of these warnings,
+	or was sufficiently enlightened to have paid them any respect?
+	The petition of 15,000 Spiritualists was treated with contemptuous
+	ridicule by the American Senate, and even the demonstrable invention
+	of Morse was subjected to ridicule in Congress. Congressmen
+	stand on no higher moral plane than the people who elect them, and
+	it is the moral faculties that elevate men into the atmosphere of
+	pure truth.</p>
+
+	<p><a class="pagenum" id="page3" title="3"> </a>But ah! could we have had a Congress and State Legislatures in
+	1860, composed of men sufficiently elevated in sentiment to realize
+	the state of the nation and the terrible necessity of preserving the
+	peace by conciliatory statesmanship, that four years of bloody horror
+	and devastation might have been spared.</p>
+
+	<p>Will the time ever come when nations shall be guided by wisdom
+	sufficient to avoid convulsions and calamities? Not until there is
+	sufficient intelligence and wisdom to appreciate the <em>science of man</em>,
+	to understand the wondrous faculties of the human soul, to follow
+	their guidance, and to listen to the wisdom of our ancestors as they
+	speak to us from a higher world.</p>
+
+	<p>The prophecies to which I would call attention now, came from the
+	upper world, and came unheeded and unproclaimed! Great truths
+	are always buried in silence, if possible, when they first arrive. It
+	is probable that the grandest prophecies in their far-reaching scope
+	will always come from such sources, and the grandest seers will be
+	inspired. The grandest prophecy of the ultimate destiny and power
+	of “Anthropology” came to me direct from an exalted source in the
+	spirit world, and no human hand had aught to do with its production.
+	But the human psychometric faculty has the same prophetic
+	power in a more limited and more practical sphere. We have no
+	reason to affirm that the wonderful personal prophecies of Cazotte
+	on the brink of the French Revolution, stated in the “Manual of
+	Psychometry,” were at all dependent on spiritual agency.</p>
+
+	<p>The prophecy of our great American calamity, which purports to
+	have come from the spirit of Gen. Washington, appears in a book
+	published by Josiah Brigham in 1859, of which few of my readers
+	have any knowledge. The messages were written by the hand of
+	the famous medium, Joseph D. Stiles, between 1854 and 1857, at
+	the house of Josiah Brigham in Quincy, Mass., and were published
+	at Boston in 1859, in a large volume of 459 pages, entitled “Messages
+	from the Spirit of John Quincy Adams.” The medium was
+	in an unconscious trance, and the handwriting was a fac-simile of
+	that of John Quincy Adams. But other spirit communications are
+	given, and that which purports to come from Washington was in a
+	handwriting like his own, though not of so bold and intellectual a
+	style. I quote the portion of his message which relates to the war
+	of secession, as follows:</p>
+
+	<p>“The cities of Sodom and Gomorrah, when they had attained the
+	summit of imperial wickedness and licentiousness, as the Bible informs
+	us, fell from their high estate by the visitation of natural penalties,
+	and the righteous judgments of an overruling Providence. The fall
+	of Rome and other large cities proves to us that no individual or nation
+	can disobey the irrepealable enactments of the Infinite Father, and
+	escape the fixed penalties attached to such transgression!</p>
+
+	<p>“And can boasting, sinful America indulge in the flattering, delusive
+	hope, that the heavy judgments which fell upon those ancient
+	cities will be averted from her, whose guilt is equal, if not even
+	greater than theirs? Does she think that Cain-like, she can escape
+	the vigilant, sleepless eye of that Divine Parent,</p>
+
+
+	<div class="poem">
+		<p><a class="pagenum" id="page4" title="4"> </a>‘Whose voice is heard in the rolling thunders,</p>
+		<p>And whose might is seen in the forked lightnings,’</p>
+	</div>
+
+	<p class="continued_paragraph">and that He will turn a deaf ear to the cry of ‘mortal agony,’ daily
+	borne on the ‘four winds of Heaven’ to His throne of justice, from
+	the almost broken hearts of His slavery-crushed children?</p>
+
+	<p>“Far from it; America can no more expect mercy in her prosperous
+	wickedness, from the hand of Deity, that can the most degraded
+	child of earth expect to enjoy equal happiness and bliss with the
+	more refined and exalted intelligences of heaven. The Parent of all
+	cares not for the unity or perpetuation of a family of States, where
+	the prosperity or welfare of a single child of His is concerned.</p>
+
+	<p>“God, the eternal Father, has commissioned us, His ministers of
+	truth and justice, to a great and important undertaking! He has
+	invested us with power and authority to influence and guide the
+	actions of mankind, and aid them in their struggles for right and
+	truth. He has bade us arm ourselves with the weapons of love and
+	justice, and hasten to the rescue of our struggling brother man.
+	His call is imperative and binding, and we <em>must</em> and <span class="small_all_caps">WILL</span> obey!</p>
+
+	<p>“We are able to discern the period rapidly approximating when
+	man will take up arms against his fellow-man, and go forth to contend
+	with the enemies of Republican liberty, and to assert at the
+	point of the bayonet those rights of which so large a portion of their
+	fellow-creatures are deprived. Again will the soil of America be
+	saturated with the blood of freedom-loving children, and her noble
+	monuments, those sublime attestations of patriotic will and determination,
+	will tremble, from base to summit, with the heavy roar of
+	artillery, and the thunder of cannon. The trials of that internal war
+	will far exceed those of the war of the Revolution, while the cause
+	contended for will equal, if not excel, in sublimity and power, that
+	for which the children of ‘76 fought.</p>
+
+	<p>“But when the battle-smoke shall disappear, and the cannon’s
+	fearful tones are heard no more, then will mankind more fully realize
+	the blessings outflowing from the mighty struggle in which they
+	so valiantly contended! No longer will their eyes meet with those
+	bound in the chains of physical slavery, or their ears listen to the
+	heavy sobs of the oppressed child of God. But o’er a land dedicated
+	to the principles of impartial liberty the King of Day will rise and
+	set, and hearts now oppressed with care and sorrow will rejoice in
+	the blessings of uninterrupted freedom.</p>
+
+	<p>“In this eventful revolution, what the patriots of the past failed to
+	accomplish their descendants will perform, with the timely assistance
+	of invisible powers. By their sides the heavenly hosts will
+	labor, imparting courage and fortitude in each hour of despondency,
+	and urging them onward to a speedy and magnificent triumph. Deploring,
+	as we do, the existence of slavery, and the means to be
+	employed to purge it from America, yet our sympathies will culminate
+	to the cause of right and justice, and give strength to those
+	who seek to set the captive free, and crush the monster, Slavery.
+	The picture which I have presented is, indeed, a hideous one. You may
+	think that I speak with too much assurance when I thus boldly
+	<a class="pagenum" id="page5" title="5"> </a>prophesy the dissolution of the American Confederacy, and, through
+	it, the destruction of that gigantic structure, human slavery! But
+	this knowledge was not the result of a moment’s or an hour’s gleaning,
+	but nearly half a century’s existence in the seraph life. I have
+	carefully watched my country’s rising progress, and I am thoroughly
+	convinced that it cannot always exist under the present Federal Constitution,
+	and the pressure of that most terrible sin, slavery!”</p>
+
+	<p>Had the people of this country been sufficiently enlightened to
+	investigate these messages fairly, they would have seen that there
+	was sufficient evidence that this warning really came from Washington,
+	and the pulpit would have enforced its solemn truths. But our
+	destiny was fixed; Washington knew that his voice would not be
+	heeded, and that war could not be prevented.</p>
+
+	<p>Again came the warning in 1860, through the lips of a more intellectual
+	medium, more capable of expressing the bright thought of
+	the higher world. Mrs. E. Hardinge Britten tells the story in her
+	“History of American Spiritualism,” pages 416-419. She refers to
+	the stupid and criminal action of the Legislature of Alabama; and a
+	similar piece of brutality has been recommended by a committee in
+	the Pennsylvania Legislature recently. The following is quoted from
+	the History.</p>
+
+
+
+	<h3>The Alabama Legislature and the Spirits—Prophecy in
+	the Alabama Legislative Halls—Retribution.</h3>
+
+	<p>Sometime about the month of January, 1860, the Legislature of
+	Alabama passed a bill declaring that any person or persons giving public
+	spiritual manifestations in Alabama should be subject to a penalty
+	of five hundred dollars.</p>
+
+	<p>We have given the substance, though not the exact wording of
+	this edict, which was met by considerable opposition, not only on the
+	part of great numbers of Spiritualists resident in the State, but also
+	by the governor himself, who refused to give his sanction to the bill.</p>
+
+	<p>Mr. George Redman, the celebrated physical test medium, had
+	just passed through the South, and remained long enough to create
+	an immense interest throughout its length and breadth.</p>
+
+	<p>The author was already engaged to deliver a course of lectures
+	in Mobile, and numerous invitations were sent to her from other
+	parts of the State.</p>
+
+	<p>As Mrs. Hardinge’s visit was anticipated at the very time when
+	the bill above named was in agitation, its friends in the Legislature
+	considered themselves much aggrieved by the governor’s refusal to
+	sanction its passage, and deeming either that he was suspiciously
+	favorable to the cause it was designed to destroy, or that their own
+	case would be aggravated by the advent of the expected lecturer,
+	they passed their bill over the governor’s veto, just twenty-four
+	hours before the explosion anticipated on her arrival could take
+	place.</p>
+
+	<p>On landing in Mobile, Mrs. Hardinge was greeted by a large and
+	enthusiastic body of friends, but found herself precluded, by legislative
+	wisdom, from expounding the sublime truths of immortality in a
+	<a class="pagenum" id="page6" title="6"> </a>city whose walls were placarded all over with bills announcing the
+	arrival of Madame Leon, the celebrated “seeress and business clairvoyant,
+	who would show the picture of your future husband, tell the
+	successful numbers in lotteries, and enable any despairing lover to
+	secure the affections of his heart’s idol,” etc. Side by side with
+	these creditable but legalized exhibitions, were flaming announcements
+	of “the humbug of Spiritualism exposed by Herr Marvel,”
+	with a long list of all the astonishing feats which “this only genuine
+	living wizard” would display for the benefit of the pious State
+	where angelic ministry might not be spoken of.</p>
+
+	<p>Mrs. Hardinge passed through Mobile, leaving many warm hearts
+	behind her, who would fain have exchanged these profane caricatures
+	for the glad tidings which beloved spirit friends were ready to
+	dispense to the world.</p>
+
+	<p>In passing through the capital city, Montgomery, a detention
+	occurred of some hours, in forming a railway connection <em lang="fr" xml:lang="fr">en route</em> for
+	Macon, Georgia, when Mrs. Hardinge and some friends travelling in
+	her company, were induced to while away the tedious time by visiting
+	the State House. The Legislature was not sitting that day, and
+	one of the party, a Spiritualist, remarked that they were even then
+	standing in the very chamber from which the recent obnoxious
+	enactment against their faith had issued.</p>
+
+	<p>The day was warm, soft, and clear. The sweet southern breeze
+	stirred a few solitary pines which waved on the capitol hill, and the
+	scene from the windows of the legislative hall was pleasant, tranquil,
+	and suggestive of calm but sluggish peace.</p>
+
+	<p>At that period—January, 1860—not an ominous murmur, not
+	the faintest whisper, even, that the war spirit was abroad, and the
+	legions of death and ruin were lighting their brands and sharpening
+	their relentless swords to be drenched in the life-blood of millions,
+	had made itself heard in the land.</p>
+
+	<p>The long cherished purposes of hate and fratricidal struggle were
+	all shrouded in the depths of profound secrecy, and the whole
+	southern country might have been represented in the scene of stillness
+	and tranquility that lay outstretched before the eyes of the
+	watchers, who stood in the State House of the capital city of
+	Alabama, on that pleasant January afternoon.</p>
+
+	<p>There were present six persons besides the author, namely:
+	Mr. and Mrs. Adams, of Tioga County, Pennsylvania; Mrs. Waters
+	and her son, a Scotch lady and gentleman from Aberdeen; Mr.
+	Halford, of New York City; and Mr. James, of Philadelphia. All
+	but the mother and son from Scotland were acquainted with the
+	author, and more or less sympathetic with her belief; all are now
+	living, and willing to testify to what follows.</p>
+
+	<p>Suddenly Mrs. Hardinge became entranced, when the whole
+	scene, laying outstretched before her eyes, appeared to become filled
+	with long lines of glittering horse and foot soldiers, who, in martial
+	pomp and military discipline, filed, rank after rank and regiment
+	after regiment, through the streets of Montgomery, and then passed
+	off into distance, and were lost to view.</p>
+
+	<p><a class="pagenum" id="page7" title="7"> </a>Meantime the crash of military music seemed to thrill through
+	the clairvoyant’s ears, at first merely marking the tramp of the vast
+	bodies of infantry with a joyous rhythm, but anon, as it died off in
+	their receding march, wild, agonizing shrieks commingled with its
+	tones, and the thundering roll of the drums seemed to be muffled by
+	deep, low, but heart-rending groans, as of human sufferers in their
+	last mortal agony.</p>
+
+	<p>At length all was still again; the last gleam of the muskets flashed
+	in the sunlight and melted away in the dim horizon; the last echo of
+	the strangely mingled music and agony ceased, and then, over the
+	whole radiant landscape, there stole an advancing army of clouds,
+	like a march of tall gray columns, reaching from earth to the skies,
+	and filling the air with such a dense and hideous gloom that the
+	whole scene became swallowed up in the thick, serried folds of mist.
+	In the midst of these cloudy legions, the eye of the seeress could
+	discern innumerable forms who seemed to shiver and bend, as if in
+	the whirl of a hidden tempest, and flitted restlessly hither and
+	thither, aimless and hopeless, apparently driven by some invisible
+	power from nothing to nowhere.</p>
+
+	<p>And these mystic shadows, flitting about in the thick grayness,
+	were unbodied souls; not like visitants from the bright summer
+	land, nor yet beings resembling the dark, undeveloped “dwellers on
+	the threshold,” whom earthly crimes held bound near their former
+	homes, but they seemed as if they were misty emanations of unripe
+	human bodies, scarcely conscious of their state, yet living, actual
+	individualities, once resident in mortal tenements, but torn from
+	their sheltering envelope too soon, or too suddenly, to have acquired
+	the strength and consistency of a fresh existence. And yet the
+	numbers of these restless phantoms were legion, and their multitude
+	seemed to be ever increasing, when, lo! this weird phantasmagoria
+	too passed away, but not before the seeress had, with entranced lips,
+	described to the listeners every feature of the scene she had
+	witnessed.</p>
+
+	<p>Then the influence seemed to deepen upon her, and she pronounced
+	words which the young Scotchman, Mr. Waters, a phonographic
+	writer, transcribed upon the spot to the following
+	effect:</p>
+
+
+	<blockquote>
+		<p>“Woe, woe to thee, Alabama!</p>
+
+		<p>“Fair land of rest, thy peace shall depart, thy glory be shorn, and the proud
+		bigots, tyrants, and cowards, who have driven God’s angels back from thy cities,
+		even in this chamber, have sealed thy doom, and their own together.</p>
+
+		<p>“Woe to thee, Alabama! Ere five drear years have fled, thou shalt sit as a
+		widow, desolate.</p>
+
+		<p>“The staff from thy husband’s hand shall be broken, the crown plucked from his
+		head, the sceptre rent from his grasp.</p>
+
+		<p>“Thy sons shall be slain, thy legislators mocked and bound with the chains thou
+		hast fastened on others.</p>
+
+		<p>“The blind ones, who have proscribed the spirits of love and comfort from
+		ministry in thy homes, shall be spirits themselves, and ere those five years be
+		passed, more spirits than bodies shall wander in the streets of Alabama, homeless,
+		restless, and unripe, torn from their earthly tenements, and unfit for their heavenly
+		ones; until thy grass-grown streets and thy moss-covered dwellings shall be
+		the haunts of legions of unbodied souls, whom thy crimes shall have violently
+		thrust into eternity!”</p>
+	</blockquote>
+
+	<p><a class="pagenum" id="page8" title="8"> </a>When this involuntary prophecy of evil import was read by the
+	young scribe to the disenthralled medium, her own horror and regret
+	at its utterance far exceeded that of any of her aghast listeners, not
+	one of whom, any more than herself, attached to it any other meaning
+	than an impression produced by temporary excitement and the
+	sphere of the unholy legislative chamber.</p>
+
+	<p>How deeply significant this fearful prophecy became during the
+	ensuing five years, all who were witnesses to its utterance, and many
+	others, to whom it was communicated in that same year, can bear
+	witness of.</p>
+
+	<p>Swept into the red gulf of all-consuming war, many of the unhappy
+	gentlemen who had legislated against “the spirits in Alabama,”
+	became, during the ensuing five years, spirits themselves, and have
+	doubtless realized the inestimable privileges which the communion
+	they so rashly denounced on earth was calculated to afford to the
+	inhabitants of the spheres.</p>
+
+	<p>In other respects, the fatal prophecy has been too literally fulfilled.
+	Many a regiment of brave men have marched out of the city streets
+	of Alabama, only to return as unbodied souls, and to behold the
+	streets grass-grown and deserted, and the thresholds which their
+	mortal feet might never again cross, overspread with the moss of
+	corruption and decay.</p>
+
+	<p>Alabama has truly sat “as a widow, desolate.” Her strength has
+	been shorn, her beauty gone. No State has sent forth a greater
+	number of brave and devoted victims to the war than Alabama; no
+	Southern State has suffered more fearfully. May God and kind
+	angels lift the war curse from her widowed head!</p>
+
+	<p>The following extract from a letter, written by Mr. Adams, one of
+	the witnesses of the above scene, to the author, in 1864, from New
+	York, during a temporary sojourn there, will carry its own comment
+	on the fulfilment of the fatal prophecy:</p>
+
+	<blockquote>
+		<p>“Now that my two poor boys are in daily danger of themselves becoming ‘unbodied
+		spirits,’ Emma, I continually revert to that terrible prophecy of yours
+		uttered in the assembly chamber at Montgomery. Heaven knows I was then so
+		little prepared to expect war or any reasonable fulfilment of the doom, that I could
+		only look to see some great pestilence, fire, or other sweeping calamity falling on
+		poor Alabama. Last night, when I read in the <cite>Herald</cite> of the sweeping extermination
+		that had visited those two fine Alabama regiments, I could not help going to
+		Mrs. Adams’s desk, where she keeps the copy that young Waters made us of your
+		prophecy, and reading it aloud to the whole company.</p>
+
+		<p>“Our friend J. B., who was present, insisted upon seeing the date, and when he
+		saw that it was January, 1860, they were all fairly aghast, and said if ever there
+		was genuine prophecy it was contained in that paper.”</p>
+	</blockquote>
+</div>
+
+<hr class="short" />
+
+<div id="art2" class="article">
+	<h2 class="title">Clearing away the Fog.</h2>
+
+	<p><span class="first_word">An</span> esteemed correspondent writes, “For several years I have been
+	a reader of some of the treatises you have published in the interest
+	of progressive thought, and have found much to admire and
+	reread; yet an occasional paragraph containing the formula of
+	orthodox theology, with its dogma of God and Jesus, interwoven
+	<a class="pagenum" id="page9" title="9"> </a>into your sequences of argument, mystifies and perplexes my
+	reason and judgment, and I indulge in much speculation regarding
+	your exact position,—whether Christianity is to be vitalized
+	and conserved by the discoverer of modern science, or the Bible
+	dogmas and traditions reinterpreted to coincide with scientific
+	method.”</p>
+
+	<p>I am not aware of having ever written anything that could make
+	my position at all doubtful, nor do I see how doubts could arise in
+	any one who attends carefully to my language, and does not indulge
+	in drawing inferences therefrom which my language does not warrant.
+	Upon this very question I have expressed myself fully in published
+	lectures. I have never manifested any sympathy with the theology
+	of the churches, have never failed to speak of it in terms of
+	absolute denunciation, and see no reason why any one should suspect
+	me of leaning in that direction.</p>
+
+	<p>As to the recognition of God to which my correspondent objects, I
+	think science, as I understand it, sanctions the idea that the basic
+	power of the universe is spiritual and not material; that spirit may
+	evolve, create, and modify matter, but matter never originates spirit,
+	though they have a continual interaction, which it is the function
+	of scientists to investigate, in which investigation, anthropology, especially
+	in its department of sarcognomy, is a long step of progress.
+	My investigations have given me some additional evidence as to the
+	Divine existence beyond what has been recorded, but do not
+	sanction the personal anthropological conceptions of Deity, which
+	bring the Divine within the conceptions of narrow and superstitious
+	minds.</p>
+
+	<p>Having discarded the whole scheme of Christian theology, there is
+	no reason why I should reject the fundamental principles of religion,
+	which are at the basis of all religions, and which are sanctioned by
+	the study of man’s religious nature. The spirit of the Christian
+	religion as it appeared among the founders of Christianity appears to
+	me a more perfect expression of religion than I find in any other of the
+	world’s religions, more spiritual, devoted, loving, and heroic, more in
+	accordance with the true religion which belongs to man’s noblest
+	faculties.</p>
+
+	<p>As for Jesus, I think the general opinion of historians and scholars
+	as to his historic existence is correct, but whether the historic
+	accounts are reliable or not I am entirely certain of his existence
+	to-day as one of the most exalted beings in the spirit world,—the
+	spirit of the Teacher who appeared in Palestine, whose principles and
+	purposes are the same advocated by myself, and who like all the
+	other exalted and ancient spirits is profoundly interested in human
+	welfare and in the progress of spiritual science, and reformation of
+	the <em>so-called</em> Christian Church. I have had sufficient psychometric
+	perception at times to realize the <em>present</em> character of such
+	beings as Jesus, Moses, St. John, John the Baptist, St. Peter,
+	Confucius, Joan of Arc, and Gen. Washington, as well as many other
+	admirable beings whose influence falls like dews upon many sympathetic
+	souls.</p>
+
+	<p><a class="pagenum" id="page10" title="10"> </a>I realize most profoundly and sadly the absence from all the high
+	places of society of those nobler qualities which I recognize in the
+	higher world, but I labor in the hope that when mankind have advanced
+	into the light of anthropological science they shall become
+	enlightened enough to sympathize with the supernal life in reverent
+	love, and to organize a social condition here which will bring even
+	the lowest classes into so satisfactory a condition that philosophizers
+	will no longer have to wrestle with the problem of evil and explain
+	the great mystery that a universe so full of the marks of a grandly
+	benevolent purpose should still be marred and dishonored by human
+	misery and degradation. It would be an unsolvable problem to-day
+	did we not perceive through spiritual science the immense preponderance
+	of good in the glorious plan of life of which this world shows
+	only the beginning.</p>
+
+	<p>As an anthropologist, I cannot but esteem and cherish the religious
+	element of human nature. Sincere worship is simply the most
+	exalted love, and fills human life with nobility and benevolence;
+	let those who can, worship the divine; let those who shrink from
+	the thought of the Infinite, worship the most exalted beings they
+	may conceive, and let those who cannot quite reach the exalted
+	beings of the spirit world, worship their parents or children, or conjugal
+	companions,—for worship is but unlimited love,—and they
+	who recoil from humanity may perhaps find something to adore in
+	the beauty and grandeur of nature on this globe, which every summer
+	arrays in beauty, and in the grandeur of stellar worlds. From love
+	and adoration come obedience,—which is the perfect life, for it is not
+	slavery, but harmony and delight.</p>
+
+	<p>Profound science does not take away religion, as superficial or
+	false science does, but develops a far nobler, holier, and more beneficent
+	religion than any churches comprehend. It corresponds to that
+	ideal religion which belongs to the higher realms of the spirit world,
+	and which has sometimes appeared on earth in inspired mortals, and
+	most often in women whose souls were devoted to love. That
+	this religious sentiment appeared in the time of Jesus among inspired
+	men, I believe, and their lives and sentiments have been to me an
+	inspiration, enabling me to believe in the <em>practicability</em> of that which
+	philosophy teaches concerning the religious life, which without those
+	illustrious examples might have seemed an unattainable excellence
+	in the present conditions of society.</p>
+
+	<p>I do not object to any worship of Jesus and his illustrious associate
+	reformers, for true worship will lead to the imitation of their heroic
+	lives. They were not divine, and were too heroically faithful to
+	truth to put forth any such false claims, nor could they in that dark
+	age be profound in science, or correct in all their opinions, as they
+	are now in a higher world. As they were on earth I honor them;
+	as they are in heaven to-day I honor them far more. They silently
+	invite us to reach that higher plane of life on which their beneficent
+	influence and inspiration may be felt. Fortunate are they
+	reach that plane.</p>
+
+</div>
+
+<hr class="short" />
+
+<div id="art3" class="article">
+	<h2 class="title"><a class="pagenum" id="page11" title="11"> </a>The Danger of Living Among Christians.</h2>
+	<p class="subtitle">A QUESTION OF PEACE OR WAR.</p>
+	<p><span class="first_word">It</span> is seldom that any of the great questions of the time are treated
+	from an ethical standpoint. Old opinions and old usages furnish the
+	standpoint for our press writers, our politicians, and our clergy.
+	The question of national defence has been under discussion for
+	years, and Samuel J. Tilden, who was regarded by millions as the
+	ablest of our statesmen, gave his whole mental power to urging its
+	consideration upon the American people; but if this question has
+	ever been seriously discussed from the ethical standpoint it has
+	escaped my notice. The nearest approach to the ethical view was
+	the suggestion of the <cite>Boston Herald</cite> that in putting on the full
+	armor of national defence the effect might be to stimulate the
+	haughty and warlike impulses of our people, and thus increase the
+	danger of war, while a defenceless seacoast would tend to inspire
+	prudence and moderation in our national government.</p>
+
+	<p>There is a great deal of truth in this view. We have a score of
+	prominent politicians whose sentiments on international questions
+	are too much like those of a bully in private life, and they have
+	a dangerous amount of influence in public affairs.</p>
+
+	<p>Turning aside from these popular discussions, the <cite class="name">Journal of
+	Man</cite> maintains the ethical standpoint for the consideration of such
+	subjects; and its first suggestion would be, Why should the people—of
+	this country spend $120,000,000 as a preparation for slaughtering
+	our brethren the Christian population of Europe, the only people
+	from whom any danger can be apprehended—our brethren in civilization
+	and Christianity, our brethren too by the ties of blood?</p>
+
+	<p>Do they not all maintain the Christian religion (at least nominally)
+	by all the power of their governments and public opinion?
+	Would not our good people in visiting them or they in visiting us
+	be invited to participate in the communion service which commemorates
+	the martyred Teacher of the law of love? Are they not our
+	brethren, the neighbors to whom the command applies, “Love thy
+	neighbor as thyself”? Is this our Christian love, to spend a hundred
+	and twenty millions for the assassination of our beloved brethren—avowedly
+	for that purpose? It is needless to object to the word
+	<em>assassination</em>,—wholesale murder by armies is substantially the same
+	thing as separate murders by each individual of the army.</p>
+
+	<p>But, it is urged, we are in danger of invasion, and the bombardment
+	of our cities. Does any one seriously believe that a powerful
+	nation intent on peace—the strongest power in the world, the
+	friend of all mankind, ready to submit any international question to
+	arbitration—would be in danger of an unjust, lawless, causeless
+	assault from the Christian nations of Europe, who have so much to
+	lose and nothing to gain by war, and who have already, in their
+	groaning, tax-burdened people, a sufficient reminder of the folly and
+	criminality of war? They have not money for another war, which
+	<a class="pagenum" id="page12" title="12"> </a>would bring on the dangers of bankruptcy and the revolt of the
+	oppressed masses.</p>
+
+	<p>It must be that this is seriously apprehended, or else that it is
+	feared that the arrogant and bullying temper of our own people or
+	our politicians may originate and exasperate international irritation
+	to the insane extreme of war.</p>
+
+	<p>What a horrible theory is this! Is all the civilization, statesmanship,
+	and Christianity of the leading nations of the earth incapable
+	of withholding them from such gigantic crimes? Is Christendom
+	the only dangerous portion of the world, where an honorable and
+	peaceful nation cannot exist in safety?</p>
+
+	<p>The heathen nations are not a source of danger. If Christendom
+	were annihilated to-morrow, there would be no occasion to
+	speak of defending our coasts or building up a powerful navy. It is
+	apparent, then—it is confessed—that it is very dangerous to live
+	among these Christian nations, or in other words, it is very <em>dangerous
+	to live among Christians</em>, as they are called! But do our statesmen
+	or our clergy suggest this view? Do they recoil from war or inspire
+	the people with thoughts of peace? Never! One of the
+	conspicuous clergymen of England was the fiercest advocate of war
+	with Russia. The fundamental principle of the Christianity of
+	Jesus is dead in the so-called Christian church, except in that little
+	fragment, the church of the Quakers, who, for their fidelity to the
+	fundamental principle, were scourged and <em>hanged</em> in Boston by the
+	<em>pious</em> predecessors of our present churches, until they were forbidden
+	by the unsanctified monarch, Charles II. Has the old spirit died out?
+	Look at the hostility to Theodore Parker—to spiritual investigation,
+	even. See the scornful and hostile attitude of the descendant
+	of Cotton Mather, Col. Higginson.</p>
+
+	<p>It may be a shocking proposition to say that it is dangerous to
+	live among Christians, but it is a sober reality, to which I invite
+	the attention of clergymen and moralists who wish to live up to
+	their profession, and who have enough of the ethical faculty to
+	realize the central principle of true Christianity.</p>
+
+	<p>If our statesmanship, religion, and education cannot protect us
+	against such horrors, may we not justly say it is a false statesmanship,
+	a false religion, and a false education? Indeed, our whole
+	fabric of opinion and morals is fundamentally false, and the <cite class="name">Journal
+	of Man</cite> goes to record as an indictment at the bar of heaven
+	against the polished barbarism of modern society, against which we
+	hear only a feeble and almost inaudible protest.</p>
+
+	<p>Boston has a highly respectable and <em>immensely perfunctory</em> Peace
+	Society, amply endowed with names and numbers, of which our late
+	postmaster was the president, and whose presidency was vastly
+	more inefficient than his postmastership.</p>
+
+	<p>A peace society might possibly be established in Boston, if its
+	best people could be roused, but the society that we have is little
+	better than a piece of ornamental nomenclature. When there is
+	anything to be done it understands how not to do it. When Mr.
+	Gladstone had performed the most glorious act of his life in the
+	<a class="pagenum" id="page13" title="13"> </a>preservation of the peace of Europe against the fierce opposition
+	of the turbulent element in England, an act which will make the
+	brightest jewel in his crown of honor, there was an opportunity of
+	sustaining him by American sympathy. The voice of Americans, if
+	they cared aught for peace, should have been heard in Europe in
+	commanding tones,—the voice of the people, the voice of Legislatures,
+	the voice of the Federal government. An effort was made
+	by half a dozen or less of enlightened gentlemen in Boston to have
+	a fitting response emanate from this city. Dr. Miner and Hon.
+	Stephen M. Allen realized its importance when I first suggested it,
+	but on that occasion the Peace Society was a lifeless corpse. The
+	society might have been waked up if Mr. Lowell, then returning
+	from England, could have been induced to co-operate. He was
+	approached on the subject, but would not respond,—he only said
+	that he <em>desired rest</em>! Alas for the hollowness of American religion
+	and philanthropy!</p>
+
+	<p>There is a nobler religion than that of American churches, a nobler
+	statesmanship than that of Mr. Tilden (which is a good specimen
+	of the popular sort), a nobler education than that of our American
+	schools and colleges—an education, a statesmanship, and a religion
+	which will wash the blood from the sword, bury the sword in the earth,
+	and proclaim the fraternity of man in all the nations of the earth.</p>
+
+	<p>Ah! when shall the demand for the supremacy of the moral law
+	be anything more than “the voice of one crying in the wilderness”?
+	Is it not possible to have a protest against the barbarism of war from
+	men of influence, who have sufficient mental power and strength of
+	character to command the attention of the nation? When Elihu
+	Burritt and Robert Dale Owen were alive I thought it might be possible,
+	but it was not attempted. Is it possible now? Is all the
+	genius and energy of the American people bound in fidelity to the
+	Moloch of war? I do not believe it, and would invite correspondence
+	from those who share this belief and wish to co-operate in such
+	a movement.</p>
+
+	<p>We have to-day a practical subject of discussion: Shall we, the
+	people of the United States, tax ourselves $120,000,000 at once and
+	an unknown amount hereafter, to place ourselves upon a par with
+	the homicidal nations of Europe, and sanction by our example the
+	infernalism in which they have lived from Cæsar to the Napoleonic
+	period, or shall we endeavor to introduce a true civilization, lay
+	aside the weapons of homicide, and urge by our powerful mediation
+	the disarmament of Europe, relieving the oppressed millions from
+	accumulating war debts, and from that infernalism of the soul which
+	makes the duel still an established institution in France and even
+	in German universities? Shall we move onward toward humane
+	civilization, or cling to a surviving barbarism?</p>
+
+	<p>The measure now proposed is an abandonment of Divine law, and
+	a practical pledge of this country to the infernalism of war. It is
+	a declaration that we do not believe peace attainable at all, and that
+	we indorse and seek to renew forever the blood-stained history of
+	the past.</p>
+
+	<p><a class="pagenum" id="page14" title="14"> </a>Is there not among our politicians who sustained the Blair Education
+	bill some one whose voice may be heard in behalf of peace? Is
+	Col. Ingersoll too much of a pessimist to believe that American moral
+	power will be sufficient in time to calm the world’s agitation? Let him
+	espouse this cause, and he will find it more practical by far than
+	riding down the ghosts of an effete theology. Let Henry George
+	turn his attention to this question, and he will find in it even more
+	than in the question of sovereignty over the land; for every acre on
+	the globe, if confiscated to-day, would pay but a portion of the
+	boundless cost of war. The blood alone that has incarnadined
+	all lands is worth vastly more than the dead soil into which it has
+	been poured. Let Dr. McGlynn, who has already entered on the
+	perilous path of the reformer, look at this question in the light of
+	religion and philanthropy, and he will find it more worthy of his attention
+	than any other practicable reform, for it is practicable now
+	and here to roll back the warlike policy from its approach to our
+	national government.</p>
+
+	<p>Are not such questions as these worthy of the profound attention
+	of such men as Rev. Dr. Miner, Rev. M. J. Savage, Rev. J. K.
+	Applebee, and Rev. W. H. Thomas of Chicago? They are not
+	theological dilettanti, but earnest thinkers. Should not every Universalist
+	and every Quaker realize that it is time for them to stir
+	when our nation’s destiny is under discussion, and that their voices
+	should be heard at Washington?</p>
+
+	<p>The proposition is made and sustained by the influence of Mr.
+	Tilden, to place this country in the list of mail-clad warrior nations,
+	and it is rather a fascinating proposition to those who entertain
+	pessimistic ideas of man, and believe that all nations are ready to
+	slay and rob when they have a good opportunity.</p>
+
+	<p>Capt. F. V. Greene, late of the U. S. engineering corps, appears as
+	the advocate of American fortifications, and at the Massachusetts
+	Reform Club he presented his views substantially as follows: The
+	United States have 3,000 miles of Atlantic and Gulf coast, 2,200 on the
+	lakes, and 1,200 on the Pacific, and have cities on these coasts
+	aggregating a wealth of $6,000,000,000—all exposed to a hostile
+	fleet, which could in a short time destroy everything within cannon-shot
+	from the water, and drive five millions of people from their
+	city homes. The fortification board estimates $120,000,000 as the
+	sum necessary to supply cannon and forts for protection, which is
+	but two per cent upon the amount of property protected.</p>
+
+	<p>This is a very satisfactory statement of the case from the average
+	standpoint, which is not the ethical. But in the first place I consider
+	it morally sure that this country will never have a foreign war
+	if it models its national policy on the Divine law; and secondly,
+	whenever war is foreseen as probable in consequence of an intolerable
+	spirit of aggression and the refusal of the hostile party to submit
+	to arbitration, a sufficient number of cannon can be cast and
+	placed on floating batteries or behind iron walls to protect every
+	endangered point. It would be necessary only to know that our
+	foundries were adequate to the task; and the fact that such an
+	<a class="pagenum" id="page15" title="15"> </a>armament was preparing would be a sufficient warning to avert a
+	hostile movement. Yet the costly steel cannon, which require such
+	enormous appropriations to prepare for their manufacture on a large
+	scale, are not absolutely necessary. It has been shown by recent
+	experiments that dynamite shells of 150 pounds can be thrown two
+	miles and a quarter by air pressure or steam pressure from light,
+	slender-built cannon, or steel tubes of unusual length, which may be
+	enlarged to compete with the most formidable artillery. A single
+	steel-clad vessel of the Monitor type with such an armament could
+	destroy a squadron.</p>
+
+	<p>But let arbitration be known as our fixed national policy—let us
+	secure also the co-operation of other nations pledged to the arbitration
+	policy, and war would be almost an impossibility.</p>
+
+	<p>Capt. Greene’s exposition of the necessity of coast defence was
+	clear and forcible, but his concluding remarks gave a glimpse of
+	peaceful purposes. “He supplemented his speech by remarking that
+	the United States will probably be called on before long to be the
+	arbitrator between the nations of Europe. The latter cannot stand
+	the financial strain much longer, and inside of twenty years we shall
+	probably be the equal in population and wealth of any two, if not
+	three, nations of Europe, and to us will be referred all their disputes
+	for settlement. When we become the referees of the world we
+	must have the force behind us, so that when we give a decision we
+	shall be able to enforce it; and this can only be adequately effected
+	by a perfect system of coast defences.”</p>
+
+	<p>Commander Burke of the U.S. Navy, who followed Capt. Greene
+	“thought that if the Irish question be settled satisfactorily, there will
+	be no danger of a war with England unless we desire war. He had
+	been advised that the English people, Great Britain and her colonies,
+	look to the Americans to assist them in case of war with any foreign
+	powers, and there is a strong sentiment of friendship for the American
+	people for that reason, if for no other. He believed that the use of
+	high explosives, by which war could be rendered more dangerous,
+	would result in reducing the probability of war.”</p>
+
+	<p>Certainly if the United States would lead in a pacific policy, Great
+	Britain, under Gladstone, would unite in the movement, and
+	arbitration would ere long become the policy of the world, and
+	would not long be the established policy before disarmament would
+	follow and the sword be buried forever.</p>
+</div>
+
+<hr class="short" />
+
+<div id="art4" class="article">
+	<h2 class="title">Legislative Quackery, Ignorance, and Blindness to the Future.</h2>
+	<p><span class="first_word">In</span> Iowa, by the management of a medical clique, a law has been
+	juggled through the Legislature, under which the founders of Christianity
+	would have been criminals, and prolonged imprisonment
+	might have been as effective as crucifixion. That any class of men
+	could have been mean enough and shameless enough to ask for such
+	a law is a sad commentary on the demoralizing influence of medical
+	<a class="pagenum" id="page16" title="16"> </a>schools, from which they derived their inspiration; and that any
+	legislative body could have yielded to the demand is another illustration
+	of the well known corruption of political life.</p>
+
+	<p>The Iowa papers state that Mrs. Post, of McGregor, Iowa, has been
+	twice arrested, convicted, and fined fifty dollars and costs for praying
+	with the sick and curing them. European tyranny is eclipsed
+	in Iowa. The old world is freer than the new, if the medical clique
+	are allowed to rule. G. Milner Stephen performs his miraculous
+	cures in London with honor, and Dorothea Trudell had her house of
+	cure by prayer in Switzerland, which has been made famous in
+	religious literature. All over Europe the people enjoy a freedom in
+	the choice of their physicians which has been prohibited in Iowa.</p>
+
+	<p>The Legislature of Maine which adjourned March 17 was induced,
+	by the newspaper comments on two bogus institutions which had
+	been chartered some years ago, to depart from their settled policy
+	and pass a law prepared by the medical clique, but not quite as stringent
+	as that of Iowa. Gov. Bodwell, however, vetoed the bill,
+	pointing out its objectionable features, and the Senate, which had
+	passed it unanimously, after being enlightened by the governor
+	rejected it by a nearly two thirds majority, showing how thoughtlessly
+	a great deal of our legislation is effected.</p>
+
+	<p>Under the laws which the colleges and their clique seek to establish,
+	Priessnitz could never have introduced hydropathy, Pasteur
+	could not have inoculated for hydrophobia without danger of
+	imprisonment, and the great American Medical Reformation, which
+	abolished the lancet and mercurial practice, and which is now
+	represented by seven colleges, would have been strangled at its birth,
+	for its primitive origin was outside of college authority. There are
+	other great ideas, great discoveries, great reforms, not yet strong
+	enough to be embodied in colleges, which medical legislation is
+	designed to suppress, to enforce a creedal uniformity.</p>
+
+	<p>Another piece of legislative quackery is revealed in the action of
+	Congress as stated in the following paragraph concerning “a new
+	bureau.”</p>
+
+	<p>“One of the acts of the retiring Congress has not been noted so
+	far, but, though not a large item in itself, it is the entering wedge of
+	subsequent legislation which will be of the highest importance to the
+	country. It is the item in the legislative appropriation bill which
+	allows of the expenditure of $10,000 by the bureau of labor “for the
+	collection of statistics of and relating to marriage and divorce in the
+	several states and territories, and in the District of Columbia.”
+	This gives the opportunity, which has heretofore not existed, to
+	obtain reasonably accurate statistics of what is going on as concerns
+	the integrity of the family throughout the whole country. This will
+	be a department under Col. Wright, in the work of the bureau of
+	labor, and is one of the results of persistent work which the National
+	Divorce League has done, under the direction of its secretary, Rev.
+	S. W. Dike. Col. Wright has already formulated plans which are
+	likely to make this new branch of the labor bureau the channel for
+	one of the most valuable reports which have yet come from his hands.
+	<a class="pagenum" id="page17" title="17"> </a>It will be the gathering of facts whose study will suggest wise legislation
+	in the future.”</p>
+
+	<p>It may not be absolutely unconstitutional for Congress to collect
+	such statistics, but it is contrary to the spirit of the constitution.
+	Congress has nothing whatever to do with such social questions,
+	which are exclusively matters of state legislation. It has allowed
+	itself to be made a cat’s paw by the National Divorce League for its
+	retrogressive policy. The welfare of society is deeply concerned in
+	breaking up all unhappy, discordant marriages, which are simply
+	nurseries of misery and crime. Every generous sentiment should
+	prompt us to go to the relief of the large number of women who
+	suffer in secret from tyranny and brutality, while from poverty,
+	timidity, helplessness, and a dread of publicity or censure, they
+	endure their wrongs in silence, and continue to bear children cursed
+	from their conception with intemperance and brutality. And when
+	they seek to escape, a barbarian law comes in to give the brutal
+	husband the ownership of their offspring; and thus they are bound
+	fast as galley slaves in their unhappy position.</p>
+
+	<p>The Legislature of Massachusetts had the opportunity of redressing
+	this wrong at their present session; but, like other masculine
+	legislatures in the past, they were deaf to the voice of mercy, and
+	the press quietly reports (March 18) that “Inexpedient was reported
+	by the House judiciary committee on equalizing the respective
+	rights of husband and wife in relation to their minor children,
+	and on equalizing their interest in each other’s property.”</p>
+
+	<p>The ladies who are so active in behalf of woman suffrage might
+	have taken more interest in this vital question, which was so easily
+	disposed of. A great wrong remains unredressed.</p>
+
+	<p>The barbarous policy of the church of Rome, which has been
+	finally abolished even in Catholic France, where divorce is now
+	permitted, our clerical bigots would revive in this country, as if it
+	were the business of the state to encourage or compel the propagation
+	of the worthless and criminal classes!</p>
+
+	<p>It is not the interest of the state to encourage human multiplication
+	at all, for it is already too powerful and progressive. It is the
+	public interest to check all propagation but that of good citizens,
+	and to protect all women from enforced maternity, whether enforced
+	under legal powers or by the arts of seduction and libertinism.</p>
+
+	<p>Prostitution, in the light of political economy, is far less of an
+	evil than the enforced maternity of wretched and discordant families,
+	which becomes the fountain of an endless flow of crime, while prostitution
+	shows its evils only in the parties immediately concerned, and
+	effectually purifies society in time by arresting the propagation of its
+	most worthless members. In the same manner it may be said that
+	some epidemics are an advantage to society, by cutting off the feeble
+	and worthless constitutions so as to leave a better race. Any one
+	who recollects the history of the Jukes family, and the number of
+	criminals infesting society who were descendants of one depraved
+	pair, will not believe that such a propagation of crime should be
+	permitted. The worthless class should not be allowed to marry,
+	<a class="pagenum" id="page18" title="18"> </a>and the criminals whom the state finds it necessary to confine in
+	the penitentiary should be permanently deprived of the power of
+	parentage.</p>
+
+	<p>Few ever reflect upon the necessary consequences of the growth
+	of population. The great wars, famines, and pestilences as in the past
+	will not be able to keep down population, and where it has free
+	course under favorable circumstances it doubles in twenty-five or
+	thirty years. In two centuries more we shall begin to feel a terrible
+	pressure, and that pressure will be aggravated by the exhaustion of
+	coal mines, of petroleum, of gas, and of forests. In Great Britain
+	alone 120,000,000 tons of coal are annually mined.</p>
+
+	<p>It may be safely assumed that one thousand to the square mile is
+	about the limit of population of the world, a limit at which population
+	must be arrested. Massachusetts is already within less than a
+	century of its utmost possible limit. It has at this time about 250
+	to the square mile, and at the American rate of growth it would
+	reach its utmost limit by the year 1950, and begin to realize the
+	crush and crisis of a crowded population, which must either cease to
+	grow or encounter the horrors of famine and social convulsions
+	arising from the struggle for life, or the calamities arising from unfortunate
+	seasons which in China and India have in our own time
+	hurried millions into their graves.</p>
+
+	<p>If Massachusetts is within sixty years of this collision with destiny,
+	other countries are still nearer the dead line of the coming century.
+	Italy is parallel with Massachusetts and Rhode Island, but Great
+	Britain and Ireland are considerably further advanced. British
+	India and the Netherlands are still further advanced, and half a
+	century, if they had the American ratio of growth, would bring them
+	to their limit, while Belgium’s progress would be arrested in thirty
+	years.</p>
+
+	<p>A wise statesmanship would not seek to hurry mankind on to this
+	great crisis, the results of which have never been foreseen or provided
+	for, but would realize that the greater the amount of inferior and
+	demoralized population the more terrible must that crisis be when it
+	comes—a crisis which can be safely borne only by elevating the
+	entire population to a higher condition than any nation has ever
+	heretofore attained.</p>
+
+	<p>Calculate as we may, the crisis must come, as certainly as death
+	comes to each individual; and whether our social system can bear
+	the strain of such conditions is beyond human ken. Look even two
+	centuries ahead, and what do we see? At that time the prolific
+	energy of the people of this republic, if continued as it has been in
+	the past, will give us more than twice the estimated population of
+	the entire globe at present—more than three thousand millions.</p>
+
+	<p>It is possible that our vast territory (including Alaska) of three
+	million, six hundred thousand square miles may, with the greatly
+	improved agriculture of the future, maintain such a population,
+	especially if relieved by overflow to the north and south.</p>
+
+	<p>If the evil elements at work to-day predominate in our population,
+	which retrogressive legislation would promote, it will be a time of
+	<a class="pagenum" id="page19" title="19"> </a>calamity and social convulsions; but if the benevolent and enlightening
+	influences now at work predominate (as we may hope), two
+	centuries hence will bring us to a consummation of prosperity, enlightenment,
+	and happiness, of which the pessimistic and sceptical
+	thinkers of to-day have no conception. A thorough comprehension
+	of the science of man will lead us in the path of enlightened
+	progress.</p>
+</div>
+
+<hr class="short" />
+
+<div id="art5" class="article">
+	<h2 class="title">Evils that need Attention.</h2>
+
+	<p><span class="first_word">The</span> public mind has been greatly stirred upon the subject of
+	monopolies and legislative abuses; but there are some glaring evils,
+	which a short statute might suppress, that are flourishing unchecked.</p>
+
+	<p>Speculative dealers in the necessaries of life have learned how to
+	build colossal fortunes by extortion from the entire nation, and the
+	nation submits quietly because gambling competition is the fashion.
+	The late Charles Partridge endeavored to show up these evils and
+	have them suppressed. We need another Partridge to complete the
+	work he undertook.</p>
+
+	<p>A despatch to the <cite>Boston Herald</cite>, March 5, shows how the game
+	has been played in Chicago on the pork market:</p>
+
+	<p>“‘Phil Armour must have been getting ready for this break for
+	three months,’ said a member of the board of trade to-day. ‘Since
+	September last he has visited nearly every large city in the country.
+	He knows from observation where all the pork is located, and,
+	having cornered it, his southern trip was a scheme to throw his
+	enemies off the scent, and enable his brokers to quietly strengthen
+	the corner. His profits and Plankinton’s cannot be less than
+	$3,000,000.’</p>
+
+	<p>“But if Armour and his old Milwaukee side partner have made
+	money, so have hundreds of others here. A messenger boy in the
+	board of trade drew $100 from a savings bank on Monday last at
+	11 o’clock and margined 100 barrels of pork. To-day the lad
+	deposited $1,000, and has $300 for speculation next week.</p>
+
+	<p>“Those poor snorts who are expecting to have pork to-day to make
+	their settlement, paid $21. Anything less was scouted. ‘You will
+	have to pay $25 next Saturday night,’ was all the comfort afforded.</p>
+
+	<p>“An advance of 2 cents a bushel in wheat was also scored by the
+	bulls to-day. The explanation is that the several big wheat syndicates
+	encouraged by the action of pork have made an alliance. The
+	talk at the hotels to-night is that Armour has started in to buy
+	wheat.”</p>
+
+	<p>We have laws that forbid boycotting, and they are enforced in
+	New York and New Haven by two recent decisions. Financial
+	extortion is an equal crime, and needs a law for its suppression. Why
+	is the metropolitan press silent? Have the syndicates too much
+	influence? Will editors who read these lines speak out?</p>
+
+	<p>In the last <cite>North American Review</cite>, James F. Hudson, in an
+	essay on “Modern Feudalism,” says:—</p>
+
+	<p><a class="pagenum" id="page20" title="20"> </a>“The conquest of all departments of industry by the power of
+	combination has just begun. But the mere beginning has imposed
+	unwarrantable taxes on the fuel, light, and food of the masses. It
+	has built up vast fortunes for the combining classes, drawn from the
+	slender means of millions. It has added an immense stimulant to
+	the process, already too active, of making the rich richer and the
+	poor poorer. The tendency in this direction is shown by the arguments
+	with which the press has teemed for the past two months,
+	that the process of combination is a necessary feature of industrial
+	growth, and that the competition which fixes the profits of every
+	ordinary trader, investor or mechanic, must be abolished for the
+	benefit of great corporations, while kept in full force against the
+	masses of producers and consumers, between whom the barriers of
+	these combinations are interposed.”</p>
+</div>
+
+<hr class="short" />
+
+<div id="art6" class="article">
+	<h2 class="title">What is Intellectual Greatness?</h2>
+	<p><span class="first_word">A</span> large amount of that which the world calls greatness is nothing
+	more than vigorous and brilliant commonplace. Taine, who is the
+	most splendid writer upon Bonaparte, ascribes to him intellectual
+	greatness, but it was greatness on a common plane—the plane of
+	animal life. He had a grand comprehension of physical and social
+	forces, of everything upon the selfish plane, for he was absolutely
+	selfish, but of nothing that belongs to the higher life of man, to
+	the civilization of coming centuries. To him Fulton was a visionary
+	and so was Gall. It was not in his intellectual range to see the
+	steamships that change the world’s commerce, and the cerebral discoveries
+	that are destined to revolutionize all philosophy.</p>
+
+	<p>The pulpit orator, Beecher, who has just passed away, was estimated
+	by many as intellectually great; but Mr. Beecher never took
+	the position of independence that any great thinker must have
+	occupied. He never moved beyond the sphere of popularity. He
+	never led men but where they were already disposed to go. Upon
+	the great question of the return of the spirit, one of the most important
+	and fundamental of all religious questions, Mr. Beecher was
+	silent. That silence was infidelity to truth, for Mr. Beecher was
+	not ignorant of the truth he concealed. Nor was he faithful to any
+	true ideal of religion. With his princely salary he accomplished less
+	than other men, living upon a salary he would have scorned. He lived
+	for self—he spent thousands of dollars on finger rings, and a
+	hundred thousand on a fancy farm, but little if anything to make
+	the world better.</p>
+
+	<p>The <cite>Boston Herald</cite> estimates very fairly his intellectual status,
+	saying: “He spoke easily. His stories were well told, his points
+	well put. He invested people with a new atmosphere, but he did
+	not set them to thinking, and can hardly be called a thinker himself.
+	Much as he has done to forward the vital interests of humanity,
+	he has contributed nothing to the vital thinking of his generation.
+	The secret of his power is the wonderful combination of animalism,
+	<a class="pagenum" id="page21" title="21"> </a>with a certain bright way of stating the thoughts which are more or
+	less in the minds of all men. Few preachers have lived with their
+	eyes and ears more open to the world, and few have better understood
+	the art of putting things. Mr. Beecher knew supremely well
+	two persons—himself and the man next to him. In interesting
+	the man next to him he interested the multitude. He had in a
+	great degree the same qualities which made Norman McLeod the
+	foremost preacher of his day in the Scotch pulpit. Such a man lives
+	too much on the surface to exhaust himself. He has only to keep
+	within the sphere of commonplace to interest people as long as
+	he lives…. Mr. Beecher lived on the surface of things. He
+	never got far below the surface. If he ever was profound it was
+	only for a moment at a time…. His work was to illustrate the
+	ideas which were operative in the world at the time, not to originate
+	or formulate them.”</p>
+
+	<p>This is a just estimate. Brilliant commonplace is not greatness,
+	but the man who is thoroughly commonplace in his conceptions,
+	who expresses well and forcibly what his hearers think, is the one
+	to win applause and popularity. Had Beecher been a great thinker,
+	a church of moderate size would have held his followers. But he was
+	not and thinkers knew it. The Rev. George L. Perin, of the Shawmut
+	Universalist Church, Boston, said of Beecher, “As we have tried to
+	analyze the influence of his address we have said to ourselves, ‘There
+	was nothing new in that, for I have thought the same thing a thousand
+	times myself;’ and yet at the same time everything <em>seemed</em> new,
+	and we have gone away thinking better of ourselves because he
+	taught us to see what we were able to think but had not been able
+	to express. He had the remarkable faculty of dressing up the
+	things that everybody was thinking, and making us see that they
+	were worth thinking. And there was something contagious about
+	his wonderful faith in human nature. He believed in the divinity
+	of man and made others believe in it.” In other words, he added
+	much to the sentiment of his hearer, but little to his thought. This
+	was greatness of character and personal power, but not intellectual
+	greatness. Beecher was a great man, but not a great thinker. The
+	great thinker overwhelms his hearers with new and strange thought.
+	The multitude, fixed in habit, reject it all. Clear and dispassionate
+	thinkers feel that they cannot reject it, but it is too new even to
+	them to elicit their enthusiasm. They sympathize with him only so
+	far as they had previously cherished similar thoughts.</p>
+
+	<p>Hence we see it is ordained that the teacher of great truths must
+	struggle against great opposition; and in proportion to his resistance
+	by his contemporaries is the grandeur of his reception by posterity;
+	in proportion to the power arrayed against him is the remoteness of
+	the century in which that power shall be extinct and his triumph
+	complete.</p>
+</div>
+
+<hr class="short" />
+
+<div id="art7" class="article">
+	<h2 class="title"><a class="pagenum" id="page22" title="22"> </a>Spiritual Wonders.</h2>
+	<div class="subsection" id="wonder1">
+
+		<p><strong class="headline">Slater’s Wonderful Spiritual Tests</strong> (described by a Brooklyn
+		newspaper correspondent).—“I have something to say to that
+		gentlemen with the black hair and high forehead,” he continued,
+		turning to another part of the house; “you have a business engagement
+		to-morrow morning at 10 o’clock with two men. I see you go
+		up a flight of steps into a room where there are two desks. In the
+		second drawer of one of these are the papers of the transaction
+		which you had in your hand to-day. You are going to invest
+		$4,000. Is that all so?”</p>
+
+		<p>“Perfectly,” said the man, in amazement.</p>
+
+		<p>“Well, now, these two men are sharpers, and if you want to save
+		that $4,000 keep out of that bargain. Legal advice is good, but
+		mine is better.”</p>
+
+		<p>“I believe it,” said the man, emphatically. His name was C. G.
+		Bulmer, and he lives at 229 Macon Street, Brooklyn. Your correspondent
+		has since verified the accuracy of the test.</p>
+
+		<p>“And don’t you suffer with your limbs?” he inquired of a lady
+		just in front of him.</p>
+
+		<p>“Well, not now; I used to; I feel it now.”</p>
+
+		<p>“Well, I am going to show you that I know all about your limbs.
+		The pain is here,” he continued, touching the calf of his leg. “You
+		have a peculiar feeling of drowsiness and then sharp pains run
+		through you, right there. Is it true?”</p>
+
+		<p>“Yes, sir.”</p>
+
+		<p>“I’ll tell you something else. You missed what your sister called
+		a big chance when you were seventeen years old, and she said you
+		were a great fool to let it go by. Is that so?”</p>
+
+		<p>“It is,” said the lady reddening.</p>
+
+		<p>“There’s a man in the hall,” he continued, pacing restlessly up and
+		down with clasped hands. “He has been sitting here and saying to him
+		self, ‘Well, this is all mind-reading. Now, if he will tell me something
+		that is going to happen I may believe something in Spiritualism.’
+		He has been rather scoffing me. Now, I want to know if this is
+		true. I am talking to you,” pointing his long, thin finger at a gray-haired
+		man who sat on his left. “All correct?” The man bowed
+		his head. “Well, I tell you, that one Christmas day,” he continued,
+		so solemnly that a hush fell on the audience—“I don’t think the
+		spirits ought to tell these things, but I am forced to say that one
+		Christmas day a member of your family will die.” A startled look
+		passed over his face, and a shiver ran through the audience at the
+		uncanny message. The man’s name could not be learned, but on
+		the succeeding Sunday your correspondent heard two women get up
+		in the audience and admit that the young Spiritualist was correct.</p>
+	</div>
+	<div class="subsection" id="wonder2">
+		<p><strong class="headline">Spirit Pictures.</strong>—Henry Rogers, a slate writing and prescribing
+		medium of established reputation, recently located at 683 Tremont Street,
+		Boston, has wonderful powers in the production of spirit pictures of the
+		departed. His most recent success is certainly a fine work of art, resembling
+		<a class="pagenum" id="page23" title="23"> </a>a crayon portrait of a young lady. His previous pictures are entitled
+		to a high rank as works of art. They are purely spirit productions, no
+		human hand being concerned. San Francisco has similar productions
+		under the mediumship of Fred Evans, but the pictures have not the
+		artistic merit of those produced by Rogers, whose beautiful pictures, however,
+		require many sittings for their production; while those of Duguid of
+		Glasgow, and Mrs. De Bar of New York, are produced in a few minutes and
+		are also highly artistic. One of the very finest works of art at San
+		Francisco is the portrait of Mrs. Watson, made by a medium, Mr. Briggs.</p>
+
+		<p>Our highest productions in art, music, poetry, philosophy, and medicine,
+		are destined yet to come from the co-operation of the spirit world. We
+		have no music at present superior to that of the medium Jesse Shepard.</p>
+	</div>
+	<div class="subsection" id="wonder3">
+		<p><strong class="headline">Spirit Telegraphy.</strong>—In 1885 we were informed of the success of
+		spirits at Cleveland, Ohio, in communicating messages by the telegraphic
+		method in rapping, in which our millionaire friend, Mr. J. H. Wade, has
+		taken much interest. A little apparatus has been constructed, with which
+		the spirits give their communications in great variety. I have repeatedly
+		stated that the diagnoses and prescriptions of deceased physicians have
+		always proved in my experience more reliable than those of the living.
+		This has been verified at Cleveland. The late Dr. Wells of Brooklyn has
+		been giving diagnoses and prescriptions through the telegraph. One of
+		these published in the <cite>Plain Dealer</cite> exhibits the most profound and accurate
+		medical knowledge. The full account of these telegraphic developments
+		in the Cleveland <cite>Plain Dealer</cite> I expected to republish, but my space
+		was already occupied. It may be found in the <cite>Banner of Light</cite> of April
+		9. But we shall have other reports hereafter.</p>
+	</div>
+	<div class="subsection" id="wonder4">
+		<p><strong class="headline">Spiritual Music.</strong>—Maud Cook, a little blind girl nine years of age,
+		at Manchester, Tenn., is an inspired musical wonder,—a performer and
+		composer. She is said to equal Blind Tom, and the local newspapers speak
+		of her in the most enthusiastic terms. She needs a judicious and wealthy
+		friend to bring her before the public in the best manner.</p>
+	</div>
+	<div class="subsection" id="wonder5">
+		<p><strong class="headline">Slate Writing.</strong>—Dr. D. J. Stansbury, of San Francisco, is very
+		successful in obtaining spiritual writing in public as well as in private. The
+		<cite>Golden Gate</cite> says:—</p>
+
+		<p>“There came upon the slates at Dr. Stansbury’s public seance, last
+		Sunday evening, the following message from Judge Wm. R. Thompson,
+		father of H. M. Thompson, of this city: ‘The essential principles of
+		primitive Christianity and the precepts of Modern Spiritualism are essentially
+		one and the same, which, if practised, would lead to the highest
+		standard of morality and be the means of grace by which all might be
+		saved.’”</p>
+	</div>
+	<div class="subsection" id="wonder6">
+		<p><strong class="headline">The Fire Test.</strong>—At the great spiritual convention held at Cincinnati
+		for several days at the end of March, (the spiritual anniversary) the report
+		states,—</p>
+
+		<p>“Mrs. Isa Wilson Porter, under control of an Oriental spirit, held her
+		bared hands and arms in the flames of a large coal oil lamp. She also
+		heated lamp chimneys and handled them as readily as she would in their
+		normal condition, and made several gentlemen cringe and some ladies
+		screech by slightly touching them with the hot glass. The test was made
+		under supervision of a committee of doctors and well known physicians,
+		who reported at the conclusion that previous to its commencement they
+		examined the lady’s hands and arms, and that they were in their natural
+		<a class="pagenum" id="page24" title="24"> </a>condition, and that her pulse beat was seventy. While the test was in
+		progress the pulse indicated forty. After its conclusion the pulse beat was
+		sixty-five; the arms and hands were a little red, but unscorched, and the
+		hair upon them not even singed. This incident seems weak in the description
+		after witnessing the fact of tender flesh and blood held in such a
+		flame for several minutes.”</p>
+	</div>
+
+</div>
+
+<hr class="short" />
+
+<div id="art8" class="article">
+	<h2 class="title">Miscellaneous Intelligence.</h2>
+
+	<div class="miscellany_item" id="misc1">
+		<p><strong class="headline">Erratum.</strong>—In the April number, the view of the upper surface of the brain, by
+		mistake of the printer, was turned upside down—<a href="#page29">see page 29</a>. The engraving on
+		page 31 must be referred to, to illustrate the description in this number.</p>
+	</div>
+	<div class="miscellany_item" id="misc2">
+		<p><strong class="headline">Co-operation</strong> is making great progress. A colony similar to that at Topolobampo
+		is to be established on 3,000 acres at Puget Sound. Manufacturers are
+		beginning to adopt the principle of giving a share of profits to their employees,
+		but space forbids details. Topolobampo has 400 busy colonists, and is not ready
+		yet for any more.</p>
+	</div>
+	<div class="miscellany_item" id="misc3">
+		<p><strong class="headline">Emancipation.</strong>—Brazil has about a million of slaves. Emancipation is proceeding
+		slowly. It may be thirty years before slavery shall be entirely extinguished.</p>
+	</div>
+	<div class="miscellany_item" id="misc4">
+		<p><strong class="headline">Inventors.</strong>—A correspondent remarks very justly that “Inventors have rescued
+		the race from primitive barbarism. They have transformed the primeval curse into
+		a blessing. True saviors they, whose every gift has multiplied itself a thousand-fold
+		by opening new fields of industry, and scattering luxuries even among the
+		poorest. To the inventor, and not to the statesman, politician, or warrior, do we
+		owe our present prosperity.”</p>
+	</div>
+	<div class="miscellany_item" id="misc5">
+		<p><strong class="headline">Important Discovery.</strong>—“Tests were recently made at Louisville of a new and
+		not expensive process for hardening and tempering steel, by which hardness and
+		elasticity are carried forward in combination. A drill made of the new steel
+		penetrated in forty minutes a steel safe-plate warranted to resist any burglar drill
+		for twelve hours. A penknife tempered by the process cut the stem of a steel
+		key readily, and with the same blade the inventor shaved the hairs on his arm.
+		The inventor is a young blacksmith. He has also a new process for converting
+		iron into steel.”</p>
+	</div>
+	<div class="miscellany_item" id="misc6">
+		<p><strong class="headline">Saccharine.</strong>—This new substance said to be 200 times as sweet as sugar is
+		manufactured from coal tar. It was discovered about six years ago in the laboratory
+		of the Johns Hopkins University in Baltimore, by Prof. Remsen and a student
+		named Fahlberg, who has since taken out patents upon it. It is greatly superior to
+		sugar, as it is free from fermentation and decomposition. A small quantity added
+		to starch or glucose will make a compound equal to sugar in sweetness. It is a valuable
+		antiseptic and has valuable medical properties.</p>
+	</div>
+	<div class="miscellany_item" id="misc7">
+		<p><strong class="headline">Sugar</strong> has been discovered to have great value as an addition to mortar, as it has
+		a solvent action on lime. An English builder wrote an important letter to the
+		authorities of Charleston, S. C., on this subject, after that city had suffered from the
+		earthquake.</p>
+	</div>
+	<div class="miscellany_item" id="misc8">
+		<p><strong class="headline">Artificial Ivory.</strong>—We shall no longer need the elephant for ivory. Compounds
+		of a celluloid character, made from cotton waste, can now be made hard as
+		ivory, or flexible or soft as we wish. White and transparent, or brilliantly colored,
+		it can be handled like wood cut and carved, or applied as a varnish. An artificial
+		ivory of creamy whiteness and great hardness is now made from good potatoes
+		washed in diluted sulphuric acid, and then boiled in the same solution until they
+		become solid and dense. They are then washed free of the acid and slowly dried.
+		This ivory can be dyed and turned, and made useful in many ways.</p>
+	</div>
+	<div class="miscellany_item" id="misc9">
+		<p><strong class="headline">Paper Pianos.</strong>—Pianos have lately been made from paper in Germany, instead
+		of wood, with great improvement in the tone.</p>
+	</div>
+	<div class="miscellany_item" id="misc10">
+		<p><a class="pagenum" id="page25" title="25"> </a><strong class="headline">Social Degeneracy of the Wealthy.</strong>—The <cite>Boston Herald</cite>
+		says: “The spirit of the age is censorious. There is no doubt of
+		that, or that with every new day the tendency toward pessimism
+		increases. But even taking these facts into consideration, there is
+		no denying that the young man about town of the nineteenth century
+		is a blot upon our boasted modern civilization. His is not a
+		pleasant figure to contemplate, though it is one that we all see very
+		often and know very well—clothed irreproachably in the most
+		expensive raiment that London tailors and unlimited credit can supply.
+		He lives lazily and luxuriously on his father’s money and his
+		wife’s, and, being after his natural term of days laid away in a tomb
+		at Mt. Auburn, ends his existence without making any more impression
+		upon the world’s history than a falling rose leaf, or an August
+		cricket’s faintest chirp.”</p>
+	</div>
+	<div class="miscellany_item" id="misc11">
+		<p><strong class="headline">Prevention of Cruelty.</strong>—In Congress, Feb. 14, Mr. Collins,
+		for the judiciary committee, has given a favorable report on the bill
+		and memorial of the Massachusetts Society for the Prevention of
+		Cruelty to Animals, asking the passage of a law to protect dumb
+		animals in the various territories from unnecessary cruelty. In the
+		report Mr. Collins says: “This body occupies the foremost place
+		among the organizations of men and women who in our time have
+		done so much to repress and punish human cruelty, abuse, and
+		neglect in dealing with dumb animals. In all the States, we believe,
+		laws now exist to prevent and punish unnecessary exposure, neglect,
+		or cruel treatment of beasts of burden and other animals. To bring
+		the federal legislation into co-operation and harmony with the laws
+		of the States on the subject, and provide a uniform rule for the
+		District of Columbia and the Territories, your committee recommend
+		the passage of the bill.”</p>
+	</div>
+	<div class="miscellany_item" id="misc12">
+		<p><strong class="headline">Value of Birds.</strong>—Maurice Thompson contends that the failure
+		of orchards in this country is largely or mainly due to the war upon
+		birds. The mocking bird he considers the most valuable of all.
+		“No Scuppernong vine,” he says, “should be without its mocking
+		bird to defend it.” Let ladies think of this who patronize cruelty by
+		wearing birds’ plumage on their bonnets.</p>
+	</div>
+	<div class="miscellany_item" id="misc13">
+		<p><strong class="headline">House Plants.</strong>—Dr. J. M. Anders has decided after eight
+		years’ investigation that house plants are very sanitary agents, and
+		even thinks that they help to ward off consumption and other diseases.</p>
+	</div>
+	<div class="miscellany_item" id="misc14">
+		<p><strong class="headline">The Largest Tunnel in the World</strong> has been completed at
+		Schemnitz in Hungary. It was begun in 1782, and is ten and a
+		quarter miles long, nine feet ten inches high, and five feet three
+		inches wide, costing nearly $5,000,000. Its purpose is to drain the
+		water of the Schemnitz mines, which is worth $75,000 a year.</p>
+	</div>
+	<div class="miscellany_item" id="misc15">
+		<p><strong class="headline">“Westward the Star of Empire,” etc.</strong>—“The Fall River
+		(Mass.,) iron works, which have been in operation for fifty years,
+		have shut down permanently and all the hands have been discharged.
+		It was found impossible to compete with western works that are
+		situated near the base of natural gas and iron supplies.”</p>
+	</div>
+</div>
+
+<hr class="short" />
+
+<div id="art9" class="article">
+	<h3><a class="pagenum" id="page26" title="26"> </a>Structure of the Brain.</h3>
+	<p class="subtitle">(<em>Continued from <a href="https://www.gutenberg.org/files/25890/25890-h/25890-h.htm#page32" title="Go to Buchanan’s Journal of Man, April 1887.">page 32.</a></em>)</p>
+	<p>Nevertheless, in men and animals killed in full health there
+	is very little serum in any part of the brain, the blood requiring
+	all the space there is for fluids; and as the blood distends one
+	part of the brain more than another in consequence of local
+	excitement, the other portions of the brain, which are in a
+	passive state, are compressed and deprived of their full supply of
+	blood, so that they are of less nourished and their development
+	declines.</p>
+
+	<p>Thus do we hold our destiny in our own hands. If we will cultivate
+	the faculties which are most in need of cultivation, their organs,
+	receiving more blood, will grow faster than any other portions of the
+	brain, while the organs that are kept in check and deprived of activity
+	will gradually decline in power and size, so that the character
+	will become essentially changed. It is in the power of every individual
+	who has the necessary determination to change essentially his
+	own nature for better or worse, as well as to modify and enlarge his
+	capacities, changing the structure of his brain; and this should
+	encourage every young man and woman to make for themselves a
+	noble destiny. Moreover, it is still more practicable to accomplish
+	this by means of education, with all proper appliances for the
+	young; and this should encourage philanthropists to struggle for
+	that social regeneration which is so clearly possible for all the
+	world, as I have shown in “The New Education.” The study of the
+	anatomy of the brain and the innumerable experiments I have made
+	on the brain, showing how completely the brain of the impressible
+	can be revolutionized in its action in a few minutes, make it very
+	apparent that society as a whole is responsible for the continued
+	existence of criminals, paupers, and lunatics; for there should not
+	be one, and would not be, if mankind could be aroused from their
+	criminal apathy and ignorance to the performance of our duty in
+	education. But alas! “the light shineth in darkness and the darkness
+	comprehendeth it not.”</p>
+
+	<p>The study of the brain continually leads us into grand philanthropic
+	conceptions by showing the splendid possibilities of humanity,—showing
+	how near we are to a nobler social state from which we
+	are debarred by ignorance, by moral apathy, by ignorant self sufficiency,
+	by intolerant bigotry, and by selfish animality,—qualities
+	which, alas! pervade all ranks to-day.</p>
+
+	<p>But returning from this digression to our study of the interior of
+	the brain: the great ventricles of which we have considered the
+	position, and which are called lateral ventricles, are interesting for
+	another reason, that they are the central region around which the
+	cerebrum is developed, as it folds over upon itself in its early growth,
+	and consequently must be borne in mind as its centre when we are
+	studying its comparative development in different heads. The
+	basilar organs lie below the ventricles and the coronal organs
+	above.</p>
+
+	<p>If we have inserted a finger under the corpus callosum, the fibres
+	of which are above our finger, we may feel below, the structure
+	which may be called the bottom of the ventricle, and which is likewise
+	<a class="pagenum" id="page27" title="27"> </a>the base or trunk of the superincumbent parts from which they
+	spring, as a tree from its stump.</p>
+
+	<p>This structure is one mass, called anteriorly the corpus striatum,
+	or striated body, and posteriorly the optic thalamus or bed of the
+	optic nerve, though the optic nerve has its principal origin in
+	another part, called the optic lobes. The thalamus and corpus
+	striatum are called together, the <em>great inferior ganglion</em> of the brain.
+	They are masses of gray substance, with white fibres from below
+	passing through them, and white fibres originating in them to
+	ascend and spread, so that their entire masses of fibres, ascending
+	and spreading out like a fan, constitute an extensive structure
+	which folds together toward the median line somewhat like a nervous
+	sac, inclosing the cavity of the ventricle and sending its representative
+	fibres across the median line,—which are called the corpus
+	callosum. This will be more fully explained when we consider the
+	genesis of the brain as it grows in the unborn infant.</p>
+
+	<p>As the reader now understands the principal parts around the
+	ventricles, let him look lower down to complete the survey and
+	understand the plan of the brain, though not its anatomical minutiæ.
+	The optic thalamus is indicated in the engraving, but the
+	corpus striatum, being more exterior and anterior, does not appear.
+	Practically they may be regarded as one body.</p>
+
+	<p>Where the thalami come together and touch or unite on the
+	median line, the junction is called a commissure (commiss. med.) and
+	the space between them where they do not touch is called the third
+	ventricle (ventric. III), which, like the lateral ventricles, may also
+	hold a little serum. It is unnecessary to consider the small parts
+	above the thalami, the choroid plexus of blood vessels, the fornix or
+	strip of nerve membrane, and the septum lucidum or delicate fibres
+	under the corpus callosum.</p>
+
+	<p>Beginning at the bottom of the figure, we observe the medulla
+	oblongata rising from the spinal cord to reach the cerebrum. Behind
+	this we see the cerebellum divided on the median line, and thus
+	presenting where it is divided the appearance called <em lang="la" xml:lang="la">arbor vitæ</em>,
+	from its resemblance to the leaf of that evergreen.</p>
+
+	<p>As the fibres of the medulla oblongata ascend they pass between
+	the cerebellum and the <em lang="la" xml:lang="la">pons Varolii</em> (bridge of Varolius) mingling
+	with its substance. The pons or bridge (for if the brain were laid
+	on its upper surface the pons would appear like a bridge over the
+	river represented by the medulla oblongata) is the commissure or
+	connecting body of the cerebellum, as the corpus callosum is of the
+	cerebrum. When the head is held erect the fibres of the pons arch
+	forward from the interior of the cerebellum on one side across the
+	median line to the other side, so that a straight line through from the
+	right to the left ear would pierce its lower portion. It looks
+	toward the front, corresponding with the upper jaw, just below
+	the nostrils, through which region it may be reached for experiment.</p>
+
+	<p>My experiments upon the brain of man show that the pons on
+	each side of the median line is the commanding head of the respiratory
+	<a class="pagenum" id="page28" title="28"> </a>impulse, and in marking the organ of respiration on my busts, it
+	is located around the mouth from the nose to the chin. When this
+	<a href="images/fig1.png"><img class="illo_left" src="images/fig1-th.png" width="226" height="119" alt="Two heads in profile" /></a>region (especially its lower portion)
+	is prominent it indicates active respiration
+	and a forcible voice. Hence
+	there is a great contrast in the vocal
+	power of two such heads as are
+	shown in the adjoining figure. This
+	discovery has been verified by the
+	pathological researches of Dr. J. B. Coste, published at Paris, 1857.</p>
+
+	<p>Following the line of the ascending fibres, after passing through
+	the pons they continue expanding and plunge into the thalamus and
+	corpus striatum. Their first appearance above the pons (marked in
+	the engraving by the word <em>Pedunc.</em>) is usually called the <em lang="la" xml:lang="la">crura</em> or
+	thighs of the brain. The right crus, running through the thalamus,
+	expands by successive additions into the right hemisphere, and the
+	left crus into the left hemisphere, of the cerebrum, and the two
+	hemispheres unite together on the median line by the corpus callosum.</p>
+
+	<p>There is very little space for the crura (plural of crus) between
+	the pons and the thalamus, but if we look at the posterior surface of
+	the ascending fibres or crura we see a larger surface, on which we
+	find a quadruple elevation called the <em lang="la" xml:lang="la">corpora quadrigemina</em> (the four
+	twins). This is an important intermediate structure between the
+	cerebrum and the cerebellum, and in fishes is the largest part of
+	the brain, but in man is the smallest portion, as will be explained
+	hereafter, and is the origin of the optic nerve, as well as a commanding
+	head for the spinal system, from which convulsions may be
+	produced.</p>
+
+	<p>The quadrigemina are distinguished also as the location of the
+	pineal gland, which rests upon them, to which we may ascribe
+	important psychic functions. The engraving shows the fibres connecting
+	the quadrigemina with the cerebellum, and a channel under
+	them (aqueduct of Sylvius) connecting the ventricles of the cerebrum
+	with those of the spinal cord. What is called the fourth
+	ventricle is the small space between the medulla oblongata and the
+	cerebellum. At this spot the posterior surface of the medulla oblongata,
+	as it gives origin to the pneumogastric nerve, which conveys
+	the sensations of the lungs, becomes the immediate source of the
+	respiratory impulse on which breathing depends, and hence is of the
+	greatest importance to life. A very slight injury at this spot with a
+	lancet or point of a knife would be fatal. It is recognized by converging
+	fibres which look like a pen, and are therefore called the
+	<em lang="la" xml:lang="la">calamus scriptorius</em>, or writer’s pen.</p>
+
+	<p>If the reader has not fully mastered the intricacy of the brain
+	structure, he will find his difficulties removed by studying two
+	more skilful dissections. The following engraving presents the
+	appearances when we cut through the middle of the brain horizontally
+	and reveal the bottom of the ventricles, in which we see the
+	great ganglion, or optic thalamus and corpus striatum, and the
+	<a class="pagenum" id="page29" title="29"> </a>three localities at which the hemispheres are connected by fibres on
+	the median line, called anterior, middle, and posterior commissures.
+	These commissures are of no importance in our study; they assist
+	the corpus callosum in maintaining a close connection between the
+	right and left hemispheres.</p>
+
+	<div class="image">
+		<a href="images/fig2.png"><img src="images/fig2-th.png" width="434" height="541" alt="Brain cross-section from top" /></a>
+	</div>
+
+	<p>Behind the thalami we see the quadrigemina, the posterior pair of
+	which is labelled <em lang="la" xml:lang="la">testes</em>, and resting upon them we have the pineal
+	gland, a centre of spiritual influx. Behind the thalami, the posterior
+	lobes are cut away that we may look down to the cerebellum,
+	and the middle of the cerebellum is also removed so that we may see
+	the back of the medulla oblongata and its fibres, called restiform
+	bodies, which give origin to the cerebellum. The fibres from the
+	cerebellum to the quadrigemina are shown, and the space at the
+	back of the medulla, called the fourth ventricle.</p>
+
+	<p>As the fibres of the medulla pass up through the pons to the
+	great inferior ganglion, and the fibres of the corpus striatum pass
+	outward and upward to form the cerebrum, this procession of the
+	fibres is shown in the annexed engraving, in which we see the
+	<a class="pagenum" id="page30" title="30"> </a>restiform bodies passing up to form the cerebellum, and the remainder
+	of the medulla fibres passing through the pons, and then, under
+	the name crus cerebri or thigh of the cerebrum, passing through
+	the thalamus and striatum to expand in the left hemisphere of the
+	cerebrum. We see the quadrigemina on the back of the ascending
+	fibres and their connection by fibres with the cerebellum behind,
+	as they connect with the thalami in front. This is as complete a
+	statement of the structure of the brain as is necessary, and further
+	anatomical details would only embarrass the memory.</p>
+
+	<div class="image">
+		<a href="images/fig3.png"><img src="images/fig3-th.png" width="517" height="386" alt="Brain cross-section from side" /></a>
+	</div>
+
+	<p>The engraving above represents not an actual dissection, but the
+	plan of the fibres as understood by the anatomist. The intricacy of
+	the cerebral structure is so great that it would require a vast number
+	of skilful dissections and engravings to make a correct portrait.
+	Fortunately, this is not necessary for the general reader, who requires
+	only to understand the position of the organs in the head,
+	and the direction of their growth, which is in all cases directly outward
+	from the central region or ventricles, so as to cause a prominence
+	of the cranium—not a “bump,” but a general fulness of
+	contour. Bumps belong to the growth of bone—not that of the
+	brain.</p>
+
+	<p>Let us next consider the genesis of the brain, which will give us a
+	more perfect understanding of its structure, by showing its origin,
+	the correct method of estimating its development.</p>
+
+	<hr class="short" />
+
+	<h2 class="title" id="art9_part2"><a class="pagenum" id="page31" title="31"> </a>Chapter III.—Genesis of the Brain</h2>
+
+	<p class="chapter_outline">Beginning of the brain—Its correspondence to the animal kingdom
+	and the law of evolution—Inadequacy of physical causes in
+	evolution—The Divine influence and its human analogy—Probability
+	of influx—Possible experimental proof—Potentiality of
+	the microscopic germinal element and its invisible life—Is it a
+	complete microcosm?—The cosmic teaching of Sarcognomy—The
+	fish form of the brain—The triple form of the brain—Decline
+	of the middle brain—Brains of the codfish, flounder, and
+	roach—Embryo of twelve weeks—Lowest type of the brain—Measurement
+	of the embryo brain—Structure of the convolutions—Unfolding
+	of the brain—Forms of twenty-one weeks and
+	seven months—Anatomy shows the central region—Its importance—Neglect
+	of prior authors—Errors of the phrenological
+	school explained—Misled by Mr. Combe into a false system of
+	measurement—How I was led to detect the error—Form of the
+	animal head and form of the noble character—Line of the
+	ventricles—Coronal and basilar development—Its illustration
+	in two heads and in the entire animal kingdom—-Dulness of
+	human observers—Anatomy shows the central region—Circular
+	character of cerebral development—Accuracy of a true cerebral
+	science, and errors of the Gallian system.</p>
+
+	<p><span class="first_word">The</span> brain begins in a human being in embryonic life, as it begins
+	in the animal kingdom, void of the convolutions which are seen in
+	its maturity,—beginning as a small outgrowth from the medulla
+	oblongata, which after the second month extends into three small
+	sacs of nervous membrane inclosing cavities, making a triple brain,
+	such as exists in fishes, which are the lowest type of vertebrated
+	animals,—animals that have a spinal column or backbone.</p>
+
+	<p>From this condition, the fishy condition of the nervous system of
+	the embryo human being at the end of the second month, there is a
+	regular growth which develops in the embryo the forms characteristic
+	of higher orders of animals in regular succession,—fishes,
+	reptiles, birds, and quadrupeds or mammalia, monkeys, and man.</p>
+
+	<p>This is the same order of succession which geologists assign to
+	the development of the animal kingdom, the higher species coming
+	in after the lower; and if every human being, instead of developing
+	at once, according to the human type, is compelled to pass through
+	this regular gradation of development, is it not apparent that the
+	lower forms are absolutely necessary as a basis for the higher, and
+	that the higher forms cannot arrive except by building up and
+	giving additional development to the lower? In other words, the
+	present status of humanity above the animal kingdom was attained
+	not by a sudden burst of creative power, making a distinct and
+	isolated being, but by the gradual and consecutive influx, which
+	evolved new faculties and organs,—a process called <em>evolution</em>. How
+	slow or how rapid this process may have been, science has not yet
+	<a class="pagenum" id="page32" title="32"> </a>determined; but it would require incalculable millions of years if
+	nothing but the common exciting effects of environment and necessity
+	have been operative in evolution; and science has utterly failed to discover
+	any power which could carry on development so effectively as to
+	produce an entire transformation of species, and overcome the vast
+	differences between the oyster and the bird, the fish and the elephant.</p>
+
+	<p>But as such transmutations of the nervous system do virtually
+	occur in man before birth, we cannot say that they are <em>impossible</em>, for
+	that which occurs in the womb under the influence of parental love
+	may also occur in the womb of nature under the influence of Divine
+	love; for love is the creative power, and as the maternal influx may
+	determine the noble development of humanity or the ignoble development
+	of monsters and animalized beings, it is obvious that the formative
+	stage of all beings is a plasmic condition in which the most
+	subtle or spiritual influences may totally change their destiny and
+	development.</p>
+
+	<p>That such an influx may come to exalt or to modify the animal
+	type is by no means unreasonable, for human beings in vast numbers
+	are liable to such influences from the unseen, which exert a
+	controlling influence, and many animals are as accessible to
+	invisible influences as man, while their embryos are vastly
+	more so than the parents. If then we recognize the spiritual
+	being in man, and the same spiritual being disembodied as a potential
+	existence,—if, moreover, we recognize the illimitable and incomprehensible
+	psychical power behind the universe, of which man is one
+	expression, we cannot fail to see that the embryonic development of
+	animals from a lower to a higher form is entirely possible and probable;
+	and in the absence of any other practicable method of evolution
+	to higher types we are compelled to adopt this as the most rational.</p>
+
+	<p>What is difficult or utterly impossible when we rely on physical
+	causes alone, becomes facile enough when we introduce the spiritual,
+	and argue from what we see in the spiritual genesis of every human
+	being to the analogous processes of nature on the largest scale.</p>
+
+	<p>If a false and brutal superstition did not stand in the way, clothed
+	in pharisaical assumption and political power, experiments might be
+	made on human beings and animals sufficient to settle most positively
+	all doubt as to transmutation of species by the semi-creative power
+	from the invisible world, combined with visible agencies.</p>
+
+	<p>Indeed, the entire difficulty vanishes from the mind of a philosopher
+	when he refers to the fact that the potentiality of all being
+	resides in a microscopic germinal element containing within itself
+	an invisible spiritual energy, which determines for all time a continual
+	succession of animals of certain forms and characteristics which
+	human power has never been able to change.</p>
+
+	<p>Why is it that a simple speck of protoplasm void of visible organization—a
+	mere jelly to hold the invisible life power—carries within
+	itself in that invisible spiritual element the destiny of myriads of
+	animal beings, and according to the nature of that invisible spiritual
+	element it may develop into a Humboldt or an oyster, an elephant,
+	a humming-bird, or a serpent?</p>
+</div>
+
+<div id="business">
+	<h2><a class="pagenum" id="page33" title="33"> </a>To the Readers of the Journal of Man.</h2>
+	<div class="ad_narrow">
+
+		<p>The establishment of a new Journal is a hazardous
+		and expensive undertaking. Every reader of
+		this volume receives what has cost more than he
+		pays for it, and in addition receives the product of
+		months of editorial, and many years of scientific,
+		labor. May I not therefore ask his aid in relieving
+		me of this burden by increasing the circulation of
+		the Journal among his friends?</p>
+
+		<p>The establishment of the Journal was a duty.
+		There was no other way effectively to reach the
+		people with its new sphere of knowledge. Buckle
+		has well said in his “History of Civilization,” that
+		“No great political improvement, no great reform,
+		either legislative or executive, has ever been originated
+		in any country by its ruling class. The first
+		suggestors of such steps have invariably been bold
+		and able thinkers, who discern the abuse, denounce
+		it, and point out the remedy.”</p>
+
+		<p>This is equally true in science, philanthropy, and
+		religion. When the advance of knowledge and
+		enlightenment of conscience render reform or revolution
+		necessary, the ruling powers of college,
+		church, government, capital, and the press, present
+		a solid combined resistance which the teachers of
+		novel truth cannot overcome without an appeal to
+		the people. The grandly revolutionary science of
+		Anthropology, which offers in one department (Psychometry)
+		“the dawn of a new civilization,” and
+		in other departments an entire revolution in social,
+		ethical, educational, and medical philosophy, has
+		experienced the same fate as all other great scientific
+		and philanthropic innovations, in being compelled
+		to sustain itself against the mountain mass
+		of established error by the power of truth alone.
+		The investigator whose life is devoted to the evolution
+		of the truth cannot become its propagandist.
+		A whole century would be necessary to the full
+		development of these sciences to which I can give but
+		a portion of one life. Upon those to whom these
+		truths are given, who can intuitively perceive their
+		value, rests the task of sustaining and diffusing the
+		truth.</p>
+
+		<p>The circulation of the Journal is necessarily
+		limited to the sphere of liberal minds and advanced
+		thinkers, but among these it has had a more warm
+		and enthusiastic reception than was ever before
+		given to any periodical. There must be in the
+		United States twenty or thirty thousand of the
+		class who would warmly appreciate the Journal,
+		but they are scattered so widely it will be years
+		before half of them can be reached without the
+		active co-operation of my readers, which I most
+		earnestly request.</p>
+
+		<p>Prospectuses and specimen numbers will be furnished
+		to those who will use them, and those who
+		have liberal friends not in their own vicinity may
+		confer a favor by sending their names that a prospectus
+		or specimen may be sent them. A liberal
+		commission will be allowed to those who canvas for
+		subscribers.</p>
+
+		<div class="subsection">
+			<h3>Enlargement of the Journal.</h3>
+
+			<p>The requests of readers for the enlargement of
+			the Journal are already coming in. It is a great
+			disappointment to the editor to be compelled each
+			month to exclude so much of interesting matter, important
+			to human welfare, which would be gratifying
+			to its readers. The second volume therefore
+			will be enlarged to 64 pages at $2 per
+			annum.</p>
+
+			<p>☞ <a href="#page34" class="emphasis">See Next Page</a>.</p>
+		</div>
+		<div class="subsection">
+			<p><strong class="headline">Books Received for Notice</strong>.—“Unanswerable
+			Logic: Spiritual discourses through the
+			mediumship of Thomas Gales Forster,” published
+			by Colby and Rich; $1.50. This is an able and
+			scholarly discussion of spiritual science. The style
+			would not suggest mediumship as their source, but
+			rather study and research. There are several
+			passages the Journal would like to quote when
+			space permits. Mr. Forster should be remembered
+			with gratitude as an able and fearless pioneer in
+			the diffusion of noble truths.</p>
+
+		</div>
+
+	</div>
+	<div class="ad_narrow" id="college">
+		<h3 class="title">College of Therapeutics.</h3>
+
+		<p>The large amount of scientific and therapeutic
+		knowledge developed by recent discoveries, but not
+		yet admitted into the slow-moving medical colleges,
+		renders it important to all young men of
+		liberal minds—to all who aim at the highest rank
+		in their profession—to all who are strictly conscientious
+		and faithful in the discharge of their
+		duties to patients under their care, to have an
+		institution in which their education can be completed
+		by a preliminary or a post-graduate course
+		of instruction.</p>
+
+		<p>The amount of practically useful knowledge of
+		the healing art which is absolutely excluded from
+		the curriculum of old style medical colleges is
+		greater than all they teach—not greater than the
+		adjunct sciences and learning of a medical course
+		which burden the mind to the exclusion of much
+		useful therapeutic knowledge, but greater than all
+		the curative resources embodied in their instruction.</p>
+
+		<p>The most important of these therapeutic resources
+		which have sometimes been partially
+		applied by untrained persons are now presented
+		in the College of Therapeutics, in which is taught
+		not the knowledge which is now represented by
+		the degree of M. D., but a more profound knowledge
+		which gives its pupils immense advantages
+		over the common graduate in medicine.</p>
+
+		<p>Therapeutic Sarcognomy, a science often demonstrated
+		and endorsed by able physicians, gives the
+		anatomy not of the physical structure, but of the
+		vital forces of the body and soul as located in every
+		portion of the constitution—a science vastly more
+		important than physical anatomy, as the anatomy
+		of life is more important than the anatomy of
+		death. Sarcognomy is the true basis of medical
+		practice, while anatomy is the basis only of operative
+		surgery and obstetrics.</p>
+
+		<p>Indeed, every magnetic or electric practitioner
+		ought to attend such a course of instruction to
+		become entirely skilful in the correct treatment of
+		disease.</p>
+
+		<p>In addition to the above instruction, special
+		attention will be given to the science and art of
+		Psychometry—the most important addition in
+		modern times to the practice of medicine, as it
+		gives the physician the most perfect diagnosis of
+		disease that is attainable, and the power of extending
+		his practice successfully to patients at any
+		distance. The methods of treatment used by
+		spiritual mediums and “mind cure” practitioners
+		will also be philosophically explained.</p>
+
+		<p>The course of instruction will begin on Monday,
+		the 2d of May, and continue six weeks. The fee
+		for attendance on the course will be $25. To
+		students who have attended heretofore the fee will
+		be $15. For further information address the
+		president,</p>
+
+		<p class="sign">JOSEPH RODES BUCHANAN, M. D.<br />
+		<span class="address name">6 James St., Boston.</span></p>
+
+		<p>The sentiments of those who have attended these
+		courses of instruction during the last eight years
+		were concisely expressed in the following statement,
+		which was unanimously signed and presented
+		to Dr. Buchanan by those attending his course
+		in Boston, of which we present only the concluding
+		resolution.</p>
+
+		<p>“<em>Resolved</em>, That Therapeutic Sarcognomy is a
+		system of science of the highest importance, alike
+		to the magnetic healer, to the electro-therapeutist,
+		and to the medical practitioner,—giving great
+		advantages to those who thoroughly understand it,
+		and destined to carry the fame of its discoverer to
+		the remotest future ages.”</p>
+
+		<div class="subsection">
+			<p>Dr. <em class="special_name">K. Meyenberg</em>, who is the Boston agent for
+			Oxygen Treatment, is a most honorable, modest, and
+			unselfish gentleman, whose superior natural powers
+			as a magnetic healer have been demonstrated during
+			eighteen years’ practice in Washington City.
+			Some of his cures have been truly marvelous. He
+			has recently located in Boston as a magnetic
+			physician.</p>
+		</div>
+
+	</div>
+	<div class="ad_wide" id="press">
+		<h2 class="title"><a class="pagenum" id="page34" title="34"> </a>Buchanan’s Journal of Man.</h2>
+
+		<div class="preamble">
+			<p>$1.00 PER ANNUM. SINGLE COPIES 10 CTS.</p>
+
+			<p>Published at 6 James St., Boston, by DR. J. R. BUCHANAN,</p>
+
+			<p class="name">Author of System of Anthropology, The New Education, Manual of Psychometry,
+			and Therapeutic Sarcognomy. Professor of Physiology and Institutes
+			of Medicine in four Medical Colleges successively from 1845 to
+			1881; and Dean of the Faculty of the Parent School
+			of American Eclecticism at Cincinnati.</p>
+		</div>
+		<h3 class="title" id="lang_of_press">LANGUAGE OF THE PRESS.</h3>
+
+		<p>The reception of this <cite class="name">Journal</cite> by the press, when first issued from 1849 to 1856 was as unique as
+		its own character. The following quotations show the reputation of the <cite class="name">Journal</cite> thirty to thirty-seven
+		years ago.</p>
+
+		<p>Buchanan’s <cite class="name">Journal of Man</cite>. “Perhaps no journal published in the world is so far in advance
+		of the age.”—<cite>Plain Dealer, Cleveland</cite>.</p>
+
+		<p>“His method is strictly scientific; he proceeds on the sure ground of observation and experiment;
+		he admits no phenomena as reality which he has not thoroughly tested, and is evidently more desirous
+		to arrive at a correct understanding of nature than to establish a system…. We rejoice that
+		they are in the hands of one who is so well qualified as the editor of the <cite class="name">Journal</cite> to do them justice,
+		both by his indomitable spirit of research, his cautious analysis of facts, and his power of exact and
+		vigorous expression.”—<cite>New York Tribune</cite>.</p>
+
+		<p>“This sterling publication is always welcome to our table. Many of its articles evince marked
+		ability and striking originality.”—<cite>National Era, Washington City</cite>.</p>
+
+		<p>“It is truly refreshing to take up this monthly…. When we drop anchor and sit down to
+		commune with philosophy as taught by Buchanan, the fogs and mists of the day clear up.”—<em>Capital
+		City Fact.</em></p>
+
+		<p>“This work is a pioneer in the progress of science.”—<cite>Louisville Democrat</cite>.</p>
+
+		<p>“After a thorough perusal of its pages, we unhesitatingly pronounce it one of the ablest publications
+		in America.”—<cite>Brandon Post</cite>.</p>
+
+		<p>“To hear these subjects discussed by ordinary men, and then to read Buchanan, there is as much
+		difference as in listening to a novice performing on a piano, and then to a Chevalier Gluck or a
+		Thalberg.”—<cite>Democrat Transcript</cite>.</p>
+
+		<p>“No person of common discernment who has read Dr. Buchanan’s writings or conversed with him
+		in relation to the topics which they treat, can have failed to recognize in him one of the very foremost
+		thinkers of the day. He is certainly one of the most charming and instructive men to whom anybody
+		with a thirst for high speculation ever listened.”—<cite>Louisville Journal</cite> (<em>edited by <span class="name">Prentice</span> and
+		<span class="name">Shipman</span></em>).</p>
+
+		<p>☞ The recent issue of the <cite class="name">Journal</cite> in Boston was immediately hailed with the same appreciative
+		cordiality by the press, and by private correspondents.</p>
+
+		<p>“Dr. Buchanan’s name has been so intimately associated with the foremost moral, social, and
+		political reforms which have agitated the public mind for the last half century that the mention of it
+		in connection with the foregoing publication under the old-time name will doubtless draw to it an
+		extensive patronage.”—<cite>Hall’s Journal of Health, New York</cite>.</p>
+
+		<p>“It is a real pleasure to be able to turn to such a journal after, as a matter of courtesy, skimming
+		over so much trash as is thrown broadcast…. He seems determined to reverse this order and
+		use words that will not only <em>express</em> his ideas, but, at the same time, <em>sink them in</em> so they will stay.”—<cite>Nonconformist</cite>.</p>
+
+		<p>“This <cite class="name">Journal</cite> reaches our table as richly laden with thought as ever. When we read it in the
+		days of our boyhood it was at least thirty-one years ahead of its time.”—<cite>New Thought</cite>.</p>
+
+		<p>“It was at that time one of the most original scientific journals of the day, advancing ideas that
+		had not then been heard of.”—<cite>Hartford Times</cite>.</p>
+
+		<p>“For this work we know of no one so well adapted as Dr. Buchanan. He stands at the head of the
+		thinkers of this nation, and has given to the topics with which he regales his readers his best thoughts.”—<em>Golden
+		Gate, San Francisco.</em></p>
+
+		<p>“This publication is unique in its aims, and by pursuing almost untrodden mental paths, leads the
+		reader into new and heretofore unexplored fields of thought.”—<cite>Herald Times, Gouverneur, N. Y</cite>.</p>
+
+		<p>“We have read with interest the varied contents of the present number, and feel eager for more.”—<em>The
+		New Age.</em></p>
+
+		<p>“All will be profited by the candid and able presentation of the various topics by the distinguished
+		anthropologist editor.”—<cite>Spiritual Offering</cite>.</p>
+
+		<p>“The complete volume will be worth twelve times the cost to progressive people.”—<em>Medical
+		Liberator.</em></p>
+
+		<p><a class="pagenum" id="page35" title="35"> </a>“Undoubtedly this will be a journal of rare merit, and much looked for by all thinking minds, as
+		its editor has established a reputation in new scientific researches, not attained by any man on this
+		continent or any other.”—<cite>Eastern Star</cite>.</p>
+
+		<p>“Several years ago, the <cite>Advance</cite>, in an article on pyschometry, expressed the opinion that Dr.
+		Buchanan was the greatest discoverer of this age, if not of any age of the world. We regard the
+		publication of such a journal as an event of the century, greater than political changes. Prof.
+		Buchanan by his discoveries has laid the foundation for the revolution of science.”—<em>Worthington
+		Advance, Minnesota</em>.</p>
+
+		<p>“It is designed to occupy the highest realm of knowledge attainable by man, hence will not attract
+		those who have no aspiration toward such knowledge. No brief notice would convey a good idea of
+		the worth of this magazine.”—<cite>Richmond (Mo.) Democrat</cite>.</p>
+
+		<p>“It is so full of valuable matter that to the thoughtful man it is a mine of gold.”—<em>Deutsche
+		Zeitung, Charleston, S. C.</em></p>
+
+		<p>“His monthly is one of rare merits, as is everything that comes from the pen of this advanced
+		thinker….We never read an article from the pen of this world-renowned thinker, but that
+		we feel we are in the presence of one whose shoes’ latchet we are unworthy to unloose.”—<em>Rostrum,
+		Vineland, N. J.</em></p>
+
+		<p>“We are more than pleased to know that Prof. Buchanan at his age of life has taken upon himself
+		such a broad, deep, beneficent task as publishing the <cite class="name">Journal of Man</cite>. We welcome it as a
+		harbinger of knowledge that will send its light away down the corridors of time as a beacon of the
+		nineteenth century….We believe that its future pages are destined to contain the vortex of
+		questions, socially and morally, which are whirling through the human mind, and their solution, in a
+		manner that will command the profound respect of philosophers, scientists, professors, doctors,
+		philanthropists, and all grades and classes of thinkers….Every word is interesting and profitable
+		to the human family.”—<cite>Eastern Star, Maine</cite>.</p>
+
+		<p>“The article on the “Phrenological doctrines of Gall, their past and present status,” is grand and
+		masterly, and whets the appetite for what is promised in continuation. We hope our readers will give
+		attention to this one article; it is worth the whole price of the magazine.”—<em>Medium and Daybreak,
+		London, England</em>.</p>
+
+		<p><strong>The Language of the Readers of this Journal</strong> has expressed in every variety of style their
+		generous and profound appreciation. One of its most enlightened and distinguished friends said that
+		language could not fully express his pleasure, and in addition to his subscription sent an extra dollar
+		<em>to pay for the first number</em>, which he considered was alone worth the subscription price. Another
+		distinguished friend writes: “It is a leader, and leads in the right direction.” Another whose celebrity
+		fills England and America writes: “I follow your noble work ever with deep interest.”</p>
+
+		<p>The following quotations show the general drift of expression: “It is a feast of good food for the
+		soul.”—<span class="small_all_caps">A. C. D.</span> “The Journal is a literary feast of which I am more than proud to be a partaker.”—<span class="small_all_caps">W.
+		S.</span> “Your “Moral Education” is one of the very best books ever written, and one of the
+		greatest as well. Your Journal charms me. You are leading the leaders; lead on.”—<span class="small_all_caps">E. E. C.</span> “I
+		am much pleased with its resurrected body, so bright and attractive.”—<span class="small_all_caps">DR. C. W.</span> “As a reader of the
+		Journal more than thirty years ago who got his first weak conceptions of the marvellous facts in man’s
+		spiritual nature, from Dr. Buchanan’s scientific discoveries, I hail the reappearance of the Journal.”—<span class="small_all_caps">D. S. F.</span>
+		“Praying that your life may be prolonged to complete the work you have planned, and
+		fully accomplish the mission appointed you by high Heaven, the elevation of the race to a higher spiritual
+		plane.”—<span class="small_all_caps">DR. E. D.</span> “Your “New Education,” a work destined to play a mighty role in this world
+		of social redemption,—we quote from it and delight in it all the time.”—<span class="small_all_caps">M. H.</span> “The truths that you so
+		ably set forth have been felt and known by me for the last six or seven years, because I am unfortunately
+		a victim of that one-sided education, called literary, which dwarfs instead of developing true and
+		noble manhood.”—<span class="small_all_caps">L. I. G.</span> of New Mexico. “The <cite class="name">Journal of Man</cite> should startle the advanced
+		medical man with transports of joy.”—<span class="small_all_caps">DR. D. E. E.</span> “I read it with great pleasure, as I do everything
+		I can meet that comes from your pen.”—<span class="small_all_caps">H. T. L.</span> “If I were younger I should place myself
+		under your tuition.”—<span class="small_all_caps">W. B.</span> “When I have read your thoughts I have felt elevated, and have wanted
+		to grasp you in body as I do spiritually.”—<span class="small_all_caps">L. M. B.</span> “I trust that you will be held in the form years yet
+		to come to carry out the important work.”—<span class="small_all_caps">J. L.</span> (England.) “I read every scrap of yours I can get my
+		fingers over.”—<span class="small_all_caps">T. M.</span> “I feel thankful from the depths of my soul that in all this wide world there is
+		such a mind as your own.”—<span class="small_all_caps">P. C. M.</span> “I do wish you could have taken charge of our American
+		Anthropological University.”—<span class="small_all_caps">W. W. B.</span> “Your method has been a much greater source of medical
+		knowledge to me than that I have gained here.”—<span class="small_all_caps">A STUDENT IN COLLEGE.</span> “Sarcognomy has been a source
+		of wonderful aid to me; I cannot give in words my estimation thereof.”—<span class="small_all_caps">G. P. B., M. D.</span> “It seems
+		that since our beloved Denton’s departure you are almost left alone to fight the great battle of Psychometry.
+		If you will make Psychometry the leading theme in your <cite class="name">Journal</cite>, you will do more to
+		hasten that dawn of a higher civilization that your noble science is destined to usher in than all other
+		sciences combined.”—<span class="small_all_caps">DR. A. B. D.</span> “I am delighted with it. I send for ten more copies for friends.”—<span class="small_all_caps">DR. B. F.</span></p>
+
+		<p><strong>From Ohio.</strong>—“My father used to take the Journal many years ago, from which I tried my first
+		experiments in psychology; and have practised magnetism for cure of diseases in an amateur way
+		with as much success as any I have seen operate.”—<span class="small_all_caps">A. K.</span></p>
+
+		<p><strong>From Germany.</strong>—“A journal of this kind would also be very much needed in Germany, for here
+		medical ignorance is equally strong. The people on the whole have no comprehension for spiritual
+		facts,—they are so sunk into dogmatism and belief in authority.”—<span class="small_all_caps">DR. F. H.</span> “As I myself am a
+		psychometer, your writings have a double interest for me. May God protect you, dear, dear friend!”—<span class="small_all_caps">COUNTESS A. V. W.</span></p>
+
+
+	</div>
+	<div class="ad_narrow">
+		<p class="ad_pstyle_1"><a class="pagenum" id="page36" title="36"> </a>FACTS,</p>
+		<p class="ad_pstyle_3">A MONTHLY MAGAZINE,</p>
+		<p class="ad_pstyle_8">DEVOTED TO</p>
+		<p class="ad_pstyle_2">Mental and Spiritual Phenomena,</p>
+		<p class="ad_pstyle_8">INCLUDING</p>
+		<p class="ad_pstyle_8">Dreams, Mesmerism, Psychometry, Clairvoyance,
+		Clairaudience, Inspiration, Trance, and Physical
+		Mediumship; Prayer, Mind, and Magnetic
+		Healing; and all classes of Psychical
+		Effects.</p>
+		<p class="ad_pstyle_3">Single Copies, 10 Cents; $1.00 per year.</p>
+		<p class="ad_pstyle_8">PUBLISHED BY</p>
+		<p class="ad_pstyle_2">Facts Publishing Company,</p>
+		<p class="ad_pstyle_3">(Drawer 5323,) BOSTON, MASS.</p>
+		<p class="ad_pstyle_7">L. L. WHITLOCK, Editor.</p>
+		<p class="ad_pstyle_8">For Sale by COLBY &amp; RICH, 9 Bosworth Street.</p>
+	</div>
+	<div class="ad_narrow">
+		<p class="ad_pstyle_1">W. F. RICHARDSON,</p>
+
+		<p class="ad_pstyle_2">MAGNETIC PHYSICIAN,</p>
+
+		<p class="ad_pstyle_3">875 Washington Street, Boston.</p>
+
+		<p class="ad_pstyle_5">Having had several years’ practice, in which his
+		powers as a healer have been tested, and been surprising
+		to himself and friends, and having been
+		thoroughly instructed in the science of Sarcognomy,
+		offers his services to the public with entire
+		confidence that he will be able to relieve or cure all
+		who apply.</p>
+
+		<p>For his professional success he refers to Prof.
+		Buchanan, and to numerous citizens whose testimonials
+		he can show.</p>
+	</div>
+	<div class="ad_narrow">
+		<p class="ad_pstyle_1" style="float:left;margin-left:20%;">OPIUM</p>
+		<p class="ad_pstyle_8"><strong>and MORPHINE HABITS</strong><br />
+		EASILY CURED BY A NEW METHOD.</p>
+		<p class="ad_pstyle_2">DR. J. C. HOFFMAN,</p>
+		<p class="ad_pstyle_7">JEFFERSON … WISCONSIN.</p>
+	</div>
+	<div class="ad_narrow">
+		<p class="ad_pstyle_1">Religio-Philosophical Journal.</p>
+		<p class="ad_pstyle_3">ESTABLISHED 1865.</p>
+		<p class="ad_pstyle_8">PUBLISHED WEEKLY AT</p>
+		<p class="ad_pstyle_2">92 La Salle Street, Chicago,</p>
+		<p class="ad_pstyle_8">By JOHN C. BUNDY,</p>
+		<p class="ad_pstyle_2">TERMS OF SUBSCRIPTION IN ADVANCE:</p>
+		<p class="ad_pstyle_8"><span class="segment">One copy, one year</span> $2.50</p>
+		<p class="ad_pstyle_8">Single copies, 5 cents. Specimen copy free.</p>
+		<p class="">All letters and communications should be addressed,
+		and all remittances made payable to</p>
+		<p class="ad_pstyle_2">JOHN C. BUNDY, Chicago, Ill.</p>
+		<p class="ad_pstyle_8">A Paper for all who Sincerely and Intelligently
+			Seek Truth without regard to Sect or Party.</p>
+		<p class="ad_pstyle_3">Press, Pulpit, and People Proclaim its Merits.</p>
+		<p class="ad_pstyle_7">Concurrent Commendations from Widely Opposite Sources.</p>
+		<p>Is the ablest Spiritualist paper in America….
+		Mr. Bundy has earned the respect of all lovers of the
+		truth, by his sincerity and courage.—<cite>Boston Evening
+		Transcript.</cite></p>
+		<p>I have a most thorough respect for the <strong class="name">Journal</strong>,
+		and believe its editor and proprietor is disposed to
+		treat the whole subject of spiritualism fairly.—<cite>Rev.
+		M. J. Savage (Unitarian) Boston.</cite></p>
+		<p>I wish you the fullest success in your courageous
+		course.—<cite>R. Heber Newton, D. D.</cite></p>
+		<p>Your course has made spiritualism respected by the
+		secular press as it never has been before, and compelled
+		an honorable recognition.—<cite>Hudson Tuttle,
+		Author and Lecturer.</cite></p>
+		<p>I read your paper every week with great interest.—<cite>H.
+		W. Thomas, D. D., Chicago.</cite></p>
+		<p>I congratulate you on the management of the
+		paper…. I indorse your position as to the investigation
+		of the phenomena.—<cite>Samuel Watson, D. D.,
+		Memphis, Tenn.</cite></p>
+	</div>
+	<div class="ad_narrow">
+		<p class="ad_pstyle_1">THE SPIRITUAL OFFERING,</p>
+
+		<p class="ad_pstyle_8">A LARGE EIGHT-PAGE, WEEKLY JOURNAL, DEVOTED
+		TO THE ADVOCACY OF SPIRITUALISM
+		IN ITS RELIGIOUS, SCIENTIFIC, AND HUMANITARIAN
+		ASPECTS.</p>
+
+		<p class="ad_pstyle_3">COL. D. M. FOX, Publisher.</p>
+
+		<p class="ad_pstyle_3"><span class="segment">D. M. &amp; NETTIE P. FOX</span> <strong class="name">Editors</strong>.</p>
+
+
+		<p class="ad_pstyle_3">EDITORIAL CONTRIBUTORS.</p>
+
+		<p class="ad_pstyle_5">Prof. Henry Kiddle, No. 7 East 130th St., New York
+		City.</p>
+
+		<p class="ad_pstyle_5">“Ouina,” through her medium, Mrs. Cora L. V. Richmond,
+		64 Union Park Place, Chicago, Ill.</p>
+
+		<p>Among its contributors will be found our oldest and
+		ablest writers. In it will be found Lectures, Essays
+		upon Scientific, Philosophical, and Spiritual subjects,
+		Spirit Communications and Messages.</p>
+
+		<p>A Young Folks’ Department has recently been
+		added, edited by <em>Ouina</em>, through her medium, Mrs.
+		Cora L. V. Richmond; also a Department, “<cite class="name">The
+		Offering’s</cite> School for Young and Old,” A. Danforth,
+		of Boston, Mass., Principal.</p>
+
+		<hr class="short" />
+
+		<p><strong class="headline">Terms of Subscription:</strong> Per Year. $2.00; Six
+		Months, $1.00; Three Months, 50 cents.</p>
+
+		<p>Any person wanting the <cite>Offering</cite>, who is unable to
+		pay more than $1.50 per annum, and will so notify us,
+		shall have it at that rate. The price will be the same
+		if ordered as a present to friends.</p>
+
+		<p>In remitting by mail, a Post-Office Money Order on
+		Ottumwa, or Draft on a Bank or Banking House in
+		Chicago or New York City, payable to the order of D.
+		M. Fox, is preferable to Bank Notes. Single copies 5
+		cents; newsdealers 3 cents, payable in advance,
+		monthly or quarterly.</p>
+
+		<p><strong class="headline">Rates of Advertising.</strong>—Each line of nonpareil
+		type, 15 cents for first insertion and 10 cents for each
+		subsequent insertion. Payment in advance.</p>
+
+		<p>☞ The circulation of the <cite class="name">Offering</cite> in every
+		State and Territory now makes it a very desirable
+		paper for advertisers. Address,</p>
+
+		<p class="ad_pstyle_3">SPIRITUAL OFFERING, Ottumwa, Iowa.</p>
+	</div>
+
+
+</div>
+
+<div id="transcriber_note">
+	<p>Transcriber’s Note: The Table of Contents was copied from
+    the index to the volume. The article <a href="#art9">STRUCTURE OF THE BRAIN</a> is
+	    continued from the <a href="https://www.gutenberg.org/files/25890/25890-h/25890-h.htm#page32" title="Buchanan’s Journal of Man, April 1887.">previous issue’s page 32</a>.</p>
+</div>
+<div id="the_end"> </div>
+
+</body>
+</html>
